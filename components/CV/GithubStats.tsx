@@ -8,16 +8,17 @@ const GithubStats = () => {
   const { theme } = useTheme();
   return (
     <div className="my-2 w-full flex justify-center">
-      {theme === "dark" ? (
-        <Image height={200} width={550} src={statsUrlDark} alt="Github stats" />
-      ) : (
+      <div className="dark:hidden">
         <Image
           height={200}
           width={550}
           src={statsUrlLight}
           alt="Github stats"
         />
-      )}
+      </div>
+      <div className="hidden dark:block">
+        <Image height={200} width={550} src={statsUrlDark} alt="Github stats" />
+      </div>
     </div>
   );
 };
