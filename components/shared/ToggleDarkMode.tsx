@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
+import { useTheme } from "next-themes";
 
 const spring = {
   type: "spring",
@@ -8,28 +8,17 @@ const spring = {
 };
 
 const ToggleDarkMode = () => {
-  const [isDarkMode, setDarkMode] = useState(false);
-
-  const triggerSwitch = () => setDarkMode((curr) => !curr);
-
-  useEffect(() => {
-    if (isDarkMode) {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  }, [isDarkMode]);
+  const { theme, setTheme } = useTheme();
 
   return (
     <button
-      className={`p-1 bg-black dark:bg-white top-10 right-10 flex w-11 h-6 ${
-        isDarkMode ? "justify-end" : "justify-start"
-      }`}
+      className={`p-1 top-10 right-10 flex w-11 h-6
+       ${theme === "dark" ? "justify-end bg-white" : "justify-start bg-black"}`}
       type="button"
-      onClick={triggerSwitch}
+      onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
     >
       <motion.div
-        className="w-4 h-4 bg-white dark:bg-black"
+        className={`w-4 h-4  ${theme === "dark" ? "bg-black" : "bg-white"}`}
         layout
         transition={spring}
       />
