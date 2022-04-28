@@ -16,9 +16,9 @@ interface ITwoColsData {
 }
 
 const TwoColsData: React.FC<ITwoColsData> = ({ data }) => (
-  <div className="grid grid-cols-6 gap-2 my-2">
+  <div className="my-2">
     {data.map((e) => (
-      <>
+      <div className="grid grid-cols-6" key={e.title}>
         <div className="flex flex-col mt-2 font-medium text-xs">
           <p>{e.date.start}</p>
           <p>{e.date.end}</p>
@@ -47,7 +47,7 @@ const TwoColsData: React.FC<ITwoColsData> = ({ data }) => (
             </p>
           ))}
         </div>
-      </>
+      </div>
     ))}
   </div>
 );
