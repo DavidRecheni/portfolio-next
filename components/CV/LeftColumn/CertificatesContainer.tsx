@@ -1,7 +1,7 @@
-import Header from "../shared/Header";
-import SidebarTwoCols from "./SidebarTwoCols";
+import Header from "../../shared/Header";
+import SidebarTwoCols from "../../shared/SidebarTwoCols";
 
-import data from "../../data/CVData";
+import data from "../../../data/CVData";
 
 const CertificatesContainer = () => (
   <>

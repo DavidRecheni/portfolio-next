@@ -1,6 +1,6 @@
-import data from "../../data/CVData";
-import Header from "../shared/Header";
-import TwoColsData from "../shared/TwoColsData";
+import data from "../../../data/CVData";
+import Header from "../../shared/Header";
+import TwoColsData from "../../shared/TwoColsData";
 
 const WorkExperience = () => (
   <div>
