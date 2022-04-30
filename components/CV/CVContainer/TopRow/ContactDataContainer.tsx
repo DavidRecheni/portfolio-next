@@ -1,5 +1,5 @@
 import { BsGithub, BsLinkedin } from "react-icons/bs";
-import data from "../../../data/CVData";
+import data from "../../../../data/CVData";
 
 const socialMedia = [
   {

@@ -1,6 +1,4 @@
-import React from "react";
-
-import data from "../../../data/CVData";
+import data from "../../../../data/CVData";
 
 const NameAndRole: React.FC = () => {
   return (
