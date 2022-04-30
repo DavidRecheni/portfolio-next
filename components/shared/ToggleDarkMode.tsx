@@ -23,7 +23,7 @@ const ToggleDarkMode = () => {
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
     >
       <motion.div
-        className={`w-4 h-4  ${theme === "dark" ? "bg-black" : "bg-white"}`}
+        className={`w-4 h-4 bg-white dark:bg-black`}
         layout
         transition={spring}
       />
