@@ -10,6 +10,7 @@ import LanguagesContainer from "../components/CV/LanguagesContainer";
 import LiveProjectsContainer from "../components/CV/LiveProjectsContainer";
 import SkillsContainer from "../components/CV/SkillsContainer";
 import WorkExperience from "../components/CV/WorkExperience";
+import PageHead from "../components/shared/PageHead";
 import ToggleDarkMode from "../components/shared/ToggleDarkMode";
 import data from "../data/CVData";
 import picture from "../data/profile-pic.jpg";
@@ -18,14 +19,7 @@ const Home: NextPage = () => {
     <div className="h-full dark:bg-github-dark">
       <div className="w-full h-full flex justify-center relative">
         <div>
-          <Head>
-            <title>David Recheni CV</title>
-            <meta
-              name="description"
-              content="My personal portfolio website built on Nextjs"
-            />
-            <link rel="icon" href="/favicon.ico" />
-          </Head>
+          <PageHead />
 
           <main>
             <div className="max-w-4xl my-2 sm:my-8 px-4 dark:text-github-gray">
