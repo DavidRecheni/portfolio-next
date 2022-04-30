@@ -5,12 +5,10 @@ const Home: NextPage = () => {
   return (
     <div className="h-full dark:bg-github-dark">
       <div className="w-full h-full flex justify-center relative">
-        <div>
-          <PageHead />
-          <main>
-            <CVContainer />
-          </main>
-        </div>
+        <PageHead />
+        <main>
+          <CVContainer />
+        </main>
       </div>
     </div>
   );
