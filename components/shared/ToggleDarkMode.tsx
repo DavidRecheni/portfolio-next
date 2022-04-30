@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useTheme } from "next-themes";
+import { useEffect } from "react";
 
 const spring = {
   type: "spring",
@@ -9,6 +10,10 @@ const spring = {
 
 const ToggleDarkMode = () => {
   const { theme, setTheme } = useTheme();
+
+  useEffect(() => {
+    setTheme("light");
+  }, []);
 
   return (
     <button

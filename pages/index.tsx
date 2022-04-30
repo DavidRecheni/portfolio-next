@@ -13,10 +13,9 @@ import WorkExperience from "../components/CV/WorkExperience";
 import ToggleDarkMode from "../components/shared/ToggleDarkMode";
 import data from "../data/CVData";
 import picture from "../data/profile-pic.jpg";
-
 const Home: NextPage = () => {
   return (
-    <div className="w-[99vw] h-full dark:bg-github-dark">
+    <div className="h-full dark:bg-github-dark">
       <div className="w-full h-full flex justify-center relative">
         <div>
           <Head>
