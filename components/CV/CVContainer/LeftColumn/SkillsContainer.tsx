@@ -1,6 +1,6 @@
 import { BsDot } from "react-icons/bs";
-import data from "../../../data/CVData";
-import Header from "../../shared/Header";
+import data from "../../../../data/CVData";
+import Header from "../../../shared/Header";
 
 const SkillsContainer = () => (
   <div className="flex flex-col w-full ">

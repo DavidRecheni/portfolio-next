@@ -1,6 +1,6 @@
 import { BsGithub } from "react-icons/bs";
-import data from "../../../data/CVData";
-import Header from "../../shared/Header";
+import data from "../../../../data/CVData";
+import Header from "../../../shared/Header";
 
 const LiveProjectsContainer = () => (
   <div className="flex flex-col w-full ml-4 sm:ml-0 gap-y-2">
