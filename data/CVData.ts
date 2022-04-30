@@ -105,7 +105,7 @@ const data = {
       icon: GiCardJoker,
       name: "DavidRecheni.dev",
       url: "https://davidrecheni.dev/",
-      gitUrl: "https://github.com/DavidRecheni/portfolio",
+      gitUrl: "https://github.com/DavidRecheni/portfolio-next",
     },
     {
       icon: GiDeathStar,
