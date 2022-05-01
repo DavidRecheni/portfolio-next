@@ -8,12 +8,14 @@ import ContactDataContainer from "./LeftColumn/ContactDataContainer";
 const LeftColumn = () => {
   return (
     <div className="flex w-fit sm:w-4/12 flex-col gap-y-2">
-      <div className="flex sm:flex-col w-full">
-        <div className="flex flex-col">
+      <div className="flex sm:flex-col w-full justify-around gap-2 ">
+        <div className="max-w-[45%] sm:max-w-none flex flex-col">
           <ProfileImageContainer />
-          <ContactDataContainer />
         </div>
-        <LiveProjectsContainer />
+        <div className="w-full flex flex-col ml-4 sm:ml-0">
+          <ContactDataContainer />
+          <LiveProjectsContainer />
+        </div>
       </div>
       <SkillsContainer />
       <LanguagesContainer />
