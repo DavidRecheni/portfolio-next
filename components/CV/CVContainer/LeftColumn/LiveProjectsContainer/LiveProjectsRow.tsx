@@ -7,7 +7,7 @@ interface ILiveProjectsRow {
 }
 const LiveProjectsRow: React.FC<ILiveProjectsRow> = ({ project }) => {
   return (
-    <div className="flex justify-between">
+    <div className="flex justify-between gap-2">
       <LiveProjectsRowName project={project} />
       <LiveProjectsRowGit url={project.gitUrl} />
     </div>
