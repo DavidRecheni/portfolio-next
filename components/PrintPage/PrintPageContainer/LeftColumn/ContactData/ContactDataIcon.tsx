@@ -1,4 +1,3 @@
-import React from "react";
 import { IconType } from "react-icons";
 
 const ContactDataIcon: React.FC<{ icon: { url: string; icon: IconType } }> = ({
