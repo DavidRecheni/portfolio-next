@@ -8,7 +8,7 @@ import { BsFillCreditCard2FrontFill } from "react-icons/bs";
 
 const data = {
   name: "David Recheni",
-  role: "Fullstack + web3 developer / lead developer",
+  role: "Fullstack + web3 developer",
   about:
     "Hallo! I’m a 30 y.o. Argentinian that lives in Berlin since February 2020. I’m always eager to learn new things. I feel comfortable accepting responsibilities and coordinating teams. Due to my studies as Designer and Dev, and my long experience working as freelancer, I can ideate, design, develop and deploy solutions from scratch. I’ve worked as Full-stack developer most of my carreer but I decided to specialize in Frontend. I’ve been working exclusively with React since I arrived to Germany",
 
@@ -22,6 +22,8 @@ const data = {
       details: "ComunidadIT",
     },
   ],
+
+  email: "davidrecheni@gmail.com",
 
   experience: [
     {
