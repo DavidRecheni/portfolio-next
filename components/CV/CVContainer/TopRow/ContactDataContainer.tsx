@@ -6,10 +6,13 @@ import data from "../../../../data/CVData";
 const ContactDataContainer = () => (
   <div className="flex flex-col ">
     <Header>Contact me</Header>
-    <div className="hidden print:flex items-center justify-center gap-2 text-lg">
+    <a
+      className="flex items-center justify-center gap-2 text-lg"
+      href={`mailto:${data.email}`}
+    >
       <BsEnvelopeFill />
       {data.email}
-    </div>
+    </a>
     <ContactDataIconRow className="print:hidden" />
   </div>
 );

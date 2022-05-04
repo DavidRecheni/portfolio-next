@@ -11,7 +11,7 @@ const ContactDataIcon: React.FC<{ icon: { url: string; icon: IconType } }> = ({
       target="_blank"
       rel="noreferrer"
     >
-      <div className="font-medium flex items-center text-2xl sm:text-4xl">
+      <div className="font-medium flex items-center text-2xl sm:text-2xl">
         {icon.icon({})}
       </div>
     </a>

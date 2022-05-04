@@ -11,10 +11,6 @@ const socialMedia = [
     icon: BsLinkedin,
     url: `http://linkedin.com/in/${data.linkedinProfile}/`,
   },
-  {
-    icon: BsEnvelopeFill,
-    url: `mailto:${data.email}?subject=Hello`,
-  },
 ];
 const ContactDataIconRow = ({ className }: { className?: string }) => {
   return (
