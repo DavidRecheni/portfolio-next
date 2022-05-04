@@ -1,6 +1,8 @@
 import Image from "next/image";
-import statsUrlDark from "../../../../data/github_stats_dark.svg";
-import statsUrlLight from "../../../../data/github_stats.svg";
+import data from "../../../../data/CVData";
+
+const statsUrlDark = `https://github-readme-stats.vercel.app/api?username=${data.githubUsername}&count_private=true&hide_border=true&show_icons=true&hide_title=true&hide=contribs&theme=github_dark`;
+const statsUrlLight = `https://github-readme-stats.vercel.app/api?username=${data.githubUsername}&count_private=true&hide_border=true&show_icons=true&hide_title=true&hide=contribs`;
 
 const GithubStats = () => {
   return (
