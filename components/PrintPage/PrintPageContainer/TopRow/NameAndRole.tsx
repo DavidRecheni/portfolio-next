@@ -9,7 +9,7 @@ const NameAndRole: React.FC = () => {
           {data.name}
         </a>
       </Link>
-      <div className="flex items-center gap-1 sm:gap-2 h-10 text-sm sm:text-2xl font-medium mt-2">
+      <div className="flex items-center gap-1 sm:gap-2 h-10 text-sm sm:text-3xl mt-2">
         {data.role}
       </div>
     </div>
