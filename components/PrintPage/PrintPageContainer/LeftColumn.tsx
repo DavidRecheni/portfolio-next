@@ -14,7 +14,6 @@ const LeftColumn = () => {
         </div>
         <div className="w-full flex flex-col ml-4 sm:ml-0">
           <ContactDataContainer />
-          <LiveProjectsContainer />
         </div>
       </div>
       <SkillsContainer />
