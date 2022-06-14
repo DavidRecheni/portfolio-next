@@ -1,19 +1,28 @@
-import { BsEnvelopeFill } from "react-icons/bs";
+import { BsEnvelopeFill, BsGithub, BsLinkedin } from "react-icons/bs";
+import data from "../../../../data/CVData";
 import Header from "../../../shared/Header";
 import ContactDataIconRow from "./ContactData/ContactDataIconRow";
-import data from "../../../../data/CVData";
 
+const socialMedia = [
+  {
+    icon: BsEnvelopeFill,
+    url: data.email,
+    mail: true,
+  },
+  {
+    icon: BsGithub,
+    url: `https://github.com/${data.githubUsername}`,
+  },
+  {
+    icon: BsLinkedin,
+    url: `http://linkedin.com/in/${data.linkedinProfile}/`,
+  },
+];
 const ContactDataContainer = () => (
   <div className="flex flex-col ">
     <Header>Contact me</Header>
-    <a
-      className="flex items-center justify-center gap-2 text-lg"
-      href={`mailto:${data.email}`}
-    >
-      <BsEnvelopeFill />
-      {data.email}
-    </a>
-    <ContactDataIconRow className="print:hidden" />
+
+    <ContactDataIconRow data={socialMedia} />
   </div>
 );
 

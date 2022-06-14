@@ -1,10 +1,10 @@
+import { BsFillCreditCard2FrontFill } from "react-icons/bs";
 import {
   Gi3DMeeple,
-  GiChaingun,
   GiCardJoker,
+  GiChaingun,
   GiDeathStar,
 } from "react-icons/gi";
-import { BsFillCreditCard2FrontFill } from "react-icons/bs";
 
 const data = {
   name: "David Recheni",

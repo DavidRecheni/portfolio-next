@@ -1,21 +1,13 @@
-import ContactDataIcon from "./ContactDataIcon";
-import data from "../../../../../data/CVData";
-import { BsEnvelopeFill, BsGithub, BsLinkedin } from "react-icons/bs";
+import SocialMediaType from "../../../../types/SocialMediaType";
+import ContactDataIcon from "./ContactDataIconRow/ContactDataIcon";
 
-const socialMedia = [
-  {
-    icon: BsGithub,
-    url: `https://github.com/${data.githubUsername}`,
-  },
-  {
-    icon: BsLinkedin,
-    url: `http://linkedin.com/in/${data.linkedinProfile}/`,
-  },
-];
-const ContactDataIconRow = ({ className }: { className?: string }) => {
+interface ContactDataIconRowProps {
+  data: SocialMediaType[];
+}
+const ContactDataIconRow: React.FC<ContactDataIconRowProps> = ({ data }) => {
   return (
-    <div className={`flex gap-2 flex-row mt-1 sm:mt-0 p-2 ${className}`}>
-      {socialMedia.map((s) => (
+    <div className="flex gap-2 mt-1 sm:mt-0 p-2 print:flex-col">
+      {data.map((s) => (
         <ContactDataIcon icon={s} key={s.url} />
       ))}
     </div>
