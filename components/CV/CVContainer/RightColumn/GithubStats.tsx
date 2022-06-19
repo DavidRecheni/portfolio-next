@@ -6,7 +6,7 @@ const statsUrlLight = `https://github-readme-stats.vercel.app/api?username=${dat
 
 const GithubStats = () => {
   return (
-    <div className="my-2 w-full flex justify-center">
+    <div className="my-2 w-full flex justify-center print:hidden">
       <div className="dark:hidden">
         <Image
           height={200}
