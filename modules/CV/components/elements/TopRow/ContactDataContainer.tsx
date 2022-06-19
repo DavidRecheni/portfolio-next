@@ -1,6 +1,6 @@
 import { BsEnvelopeFill, BsGithub, BsLinkedin } from "react-icons/bs";
-import data from "../../../../data/CVData";
-import Header from "../../../shared/Header";
+import data from "../../../data/CVData";
+import Header from "../../layout/Header";
 import ContactDataIconRow from "./ContactData/ContactDataIconRow";
 
 const socialMedia = [

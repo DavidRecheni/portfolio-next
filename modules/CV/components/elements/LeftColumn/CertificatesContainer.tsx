@@ -1,7 +1,7 @@
-import Header from "../../../shared/Header";
-import SidebarTwoCols from "../../../shared/SidebarTwoCols";
+import Header from "../../layout/Header";
+import SidebarTwoCols from "../../layout/SidebarTwoCols";
 
-import data from "../../../../data/CVData";
+import data from "../../../data/CVData";
 
 interface CertificatesContainerProps {
   className?: string;

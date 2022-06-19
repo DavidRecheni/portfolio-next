@@ -1,6 +1,6 @@
-import Header from "../../../shared/Header";
+import Header from "../../layout/Header";
 
-import data from "../../../../data/CVData";
+import data from "../../../data/CVData";
 
 const AboutContainer = () => (
   <div className="flex flex-col">

@@ -1,6 +1,6 @@
-import LeftColumn from "./CVContainer/LeftColumn";
-import RightColumn from "./CVContainer/RightColumn";
-import TopRow from "./CVContainer/TopRow";
+import LeftColumn from "./components/elements/LeftColumn";
+import RightColumn from "./components/elements/RightColumn";
+import TopRow from "./components/elements/TopRow";
 
 const CVContainer = () => {
   return (

@@ -1,6 +1,6 @@
-import SidebarTwoCols from "../../../shared/SidebarTwoCols";
-import data from "../../../../data/CVData";
-import Header from "../../../shared/Header";
+import SidebarTwoCols from "../../layout/SidebarTwoCols";
+import data from "../../../data/CVData";
+import Header from "../../layout/Header";
 
 interface LanguagesContainerProps {
   className?: string;

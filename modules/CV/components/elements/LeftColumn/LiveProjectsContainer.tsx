@@ -1,5 +1,5 @@
-import data from "../../../../data/CVData";
-import Header from "../../../shared/Header";
+import data from "../../../data/CVData";
+import Header from "../../layout/Header";
 import LiveProjectsRow from "./LiveProjectsContainer/LiveProjectsRow";
 
 const LiveProjectsContainer = () => (

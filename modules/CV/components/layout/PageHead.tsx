@@ -4,10 +4,10 @@ import React from "react";
 const PageHead = () => {
   return (
     <Head>
-      <title>David Recheni CV</title>
+      <title>David Recheni</title>
       <meta
         name="description"
-        content="My personal portfolio website built on Nextjs"
+        content="Personal website. Fullstack + web3 dev"
       />
       <link rel="icon" href="/favicon.ico" />
     </Head>
