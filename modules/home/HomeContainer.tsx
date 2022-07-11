@@ -1,16 +1,42 @@
-import { Cloud, Environment, OrbitControls } from "@react-three/drei";
+import { ContactShadows } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
 import DavidSculpture from "./components/DavidSculpture";
 import Loader from "./components/Loader";
+import Triangle from "./components/Triangle";
 const HomeContainer = () => {
   return (
-    <div className="max-w-4xl w-screen h-screen my-2 sm:my-8 px-4 dark:text-github-gray">
-      <Canvas>
+    <div className="max-w-4xl w-screen h-screen my-2 sm:my-8 px-4 dark:text-github-gray ">
+      <Canvas shadows>
         <Suspense fallback={<Loader />}>
-          <pointLight position={[20, 10, 20]} intensity={0.5} />
+          <spotLight
+            position={[15, 40, 45]}
+            angle={0.3}
+            penumbra={0.2}
+            intensity={0.2}
+          />
+
+          <spotLight
+            position={[0, 40, 35]}
+            angle={0.3}
+            penumbra={0.2}
+            intensity={0.2}
+          />
+          <Triangle
+            color="white"
+            scale={0.04}
+            rotation={[0, 0, Math.PI / 3]}
+            position={[0.3, -3, -5]}
+          />
+
           <DavidSculpture />
-          <OrbitControls />
+          <ContactShadows
+            position={[0.7, -5.3, 0]}
+            opacity={1}
+            scale={14}
+            blur={2}
+            far={6}
+          />
         </Suspense>
       </Canvas>
     </div>
