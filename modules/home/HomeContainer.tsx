@@ -6,7 +6,10 @@ import Loader from "./components/Loader";
 import Triangle from "./components/Triangle";
 const HomeContainer = () => {
   return (
-    <div className="max-w-4xl w-screen h-screen my-2 sm:my-8 px-4 dark:text-github-gray ">
+    <div className="h-screen flex flex-col items-center dark:text-github-gray ">
+      <h1 className="absolute text-white font-['Abhaya\\Libre'] mt-20 text-6xl ">
+        Deiv.re
+      </h1>
       <Canvas shadows>
         <Suspense fallback={<Loader />}>
           <spotLight
