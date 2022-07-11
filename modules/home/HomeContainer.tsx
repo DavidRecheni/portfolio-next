@@ -16,7 +16,7 @@ const HomeContainer = () => {
             position={[15, 40, 45]}
             angle={0.3}
             penumbra={0.2}
-            intensity={0.2}
+            intensity={0.25}
           />
 
           <spotLight
