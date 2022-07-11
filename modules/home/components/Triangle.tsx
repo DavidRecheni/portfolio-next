@@ -16,7 +16,7 @@ function Triangle({ color, ...props }: Props) {
   useFrame((_) => {
     if (ref?.current?.position)
       return (ref.current.position.y =
-        -1.75 + Math.sin(_.clock.elapsedTime + r) / 10);
+        -1.75 + Math.sin(_.clock.elapsedTime + r) / 8);
   });
 
   const { paths: [path] } = useLoader(SVGLoader, '/assets/triangle.svg') // prettier-ignore
