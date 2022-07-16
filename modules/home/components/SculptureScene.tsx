@@ -1,41 +1,42 @@
 import { ContactShadows } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
+import dynamic from "next/dynamic";
 import { Suspense } from "react";
 import DavidSculpture from "./DavidSculpture";
 import Loader from "./Loader";
 import Triangle from "./Triangle";
 
+const PostProcessingDynamic = dynamic(() => import("./PostProcessing"), {
+  ssr: false,
+});
+
 function SculptureScene() {
   return (
     <Canvas shadows>
-      <spotLight
-        position={[15, 40, 45]}
-        angle={0.3}
-        penumbra={0.2}
-        intensity={0.25}
-      />
+      <hemisphereLight intensity={0.2} color="#eaeaea" groundColor="black" />
 
       <spotLight
-        position={[0, 40, 35]}
+        position={[25, 0, -35]}
         angle={0.3}
         penumbra={0.2}
-        intensity={0.2}
+        intensity={1.25}
       />
+
       <Suspense fallback={<Loader />}>
         <Triangle
-          color="white"
-          scale={0.03}
+          scale={0.025}
           rotation={[0, 0, Math.PI / 3]}
-          position={[0.3, -3, -5]}
+          position={[0, -4.5, -5]}
         />
-        <DavidSculpture scale={0.8} position={[0, -4, -3.5]} />
+        <DavidSculpture scale={0.8} position={[-1.5, -4, -3.5]} />
         <ContactShadows
-          position={[0.7, -5.3, 0]}
+          position={[0.6, -5.3, 0]}
           opacity={1}
           scale={14}
           blur={2}
           far={6}
         />
+        <PostProcessingDynamic />
       </Suspense>
     </Canvas>
   );
