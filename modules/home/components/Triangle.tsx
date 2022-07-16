@@ -4,34 +4,30 @@ import { Group } from "three";
 import { SVGLoader } from "three/examples/jsm/loaders/SVGLoader";
 
 interface Props {
-  color: string;
   scale: number;
   rotation: Euler;
   position: Vector3;
   [key: string]: any;
 }
-function Triangle({ color, ...props }: Props) {
-  const ref = useRef<Group>(null);
-  const [r] = useState(() => Math.random() * 10000);
-  useFrame((_) => {
-    if (ref?.current?.position)
-      return (ref.current.position.y =
-        -1.75 + Math.sin(_.clock.elapsedTime + r) / 8);
-  });
+function Triangle(props: Props) {
+  const {
+    paths: [path],
+  } = useLoader(SVGLoader, "/assets/triangle.svg");
 
-  const { paths: [path] } = useLoader(SVGLoader, '/assets/triangle.svg') // prettier-ignore
   const geom = useMemo(
     () =>
-      SVGLoader.pointsToStroke(
-        path.subPaths[0].getPoints(),
-        path?.userData?.style
-      ),
+      SVGLoader.pointsToStroke(path.subPaths[0].getPoints(), {
+        ...path?.userData?.style,
+        strokeWidth: 70,
+        strokeColor: "rgb(255)",
+      }),
     []
   );
+
   return (
-    <group ref={ref}>
+    <group>
       <mesh geometry={geom} {...props}>
-        <meshBasicMaterial color={color} toneMapped={false} />
+        <meshBasicMaterial />
       </mesh>
     </group>
   );
