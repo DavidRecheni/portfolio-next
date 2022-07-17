@@ -17,9 +17,10 @@ const DavidSculpture = ({ scale, position }: Props) => {
   const ref = useRef<Mesh>(null);
 
   useFrame((_) => {
-    if (ref?.current?.position)
-      return (ref.current.position.y =
-        -4.4 + Math.sin(_.clock.elapsedTime) / 8);
+    if (ref?.current?.position) {
+      ref.current.position.y = -4.4 + Math.sin(_.clock.elapsedTime) / 8;
+      ref.current.rotation.y = Math.sin(_.clock.elapsedTime) / 24;
+    }
   });
 
   return (
