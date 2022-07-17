@@ -1,13 +1,13 @@
 import type { NextPage } from "next";
-import CVContainer from "../components/CV/CVContainer";
-import PageHead from "../components/shared/PageHead";
+import PageHead from "../modules/CV/components/layout/PageHead";
+import HomeContainer from "../modules/home/HomeContainer";
 const Home: NextPage = () => {
   return (
-    <div className="h-full dark:bg-github-dark">
-      <div className="w-full h-full flex justify-center relative">
+    <div className="h-screen dark:bg-github-dark">
+      <div className="w-screen h-screen flex justify-center relative bg-gradient-to-br from-[#0d0c0f] via-[#524d8b] to-[#0d0c0f]">
         <PageHead />
         <main>
-          <CVContainer />
+          <HomeContainer />
         </main>
       </div>
     </div>
