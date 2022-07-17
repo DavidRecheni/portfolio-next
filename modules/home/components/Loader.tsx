@@ -5,7 +5,7 @@ function Loader() {
   return (
     <Html center>
       <div className="flex flex-col text-white">
-        <div className="text-xl">{progress}%</div>
+        <div className="text-xl">{Math.round(progress)}%</div>
         <div>loaded</div>
       </div>
     </Html>
