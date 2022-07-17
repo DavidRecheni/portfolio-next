@@ -21,13 +21,11 @@ const HomeContainer = () => {
         </div>
 
         <div className="absolute h-screen right-48 flex flex-col justify-center">
-          <div className="text-2xl text-white">
-            <Link href="/cv">
-              <h2 className="mt-20 mr-20 hover:cursor-pointer hover:border-b-2">
-                CV
-              </h2>
-            </Link>
-          </div>
+          <Link href="/cv">
+            <h2 className="mt-20 mr-20 hover:cursor-pointer border-b-2 px-1 pb-1 border-slate-400 hover:border-white border- text-3xl text-white">
+              CV
+            </h2>
+          </Link>
         </div>
       </div>
     </div>
