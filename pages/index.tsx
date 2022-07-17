@@ -4,7 +4,7 @@ import HomeContainer from "../modules/home/HomeContainer";
 const Home: NextPage = () => {
   return (
     <div className="h-screen dark:bg-github-dark">
-      <div className="w-screen h-screen flex justify-center relative bg-gradient-to-br from-[#0c0a24] via-[#302b63] to-[#0c0a24]">
+      <div className="w-screen h-screen flex justify-center relative bg-gradient-to-br from-[#0d0c0f] via-[#524d8b] to-[#0d0c0f]">
         <PageHead />
         <main>
           <HomeContainer />
