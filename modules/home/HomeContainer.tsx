@@ -4,9 +4,9 @@ import SculptureScene from "./components/SculptureScene";
 const HomeContainer = () => {
   return (
     <div className="relative h-screen w-screen flex flex-col items-center text-white ">
-      <div className="absolute right-6 2xl:left-48 h-screen flex items-center">
+      <div className="absolute right-6 2xl:left-48 h-screen flex items-end md:items-center bottom-14 lg:bottom-0">
         <div className="flex flex-col">
-          <h1 className="font-['Abhaya\\Libre']  text-8xl">Hola.</h1>
+          <h1 className="font-['Abhaya\\Libre'] text-8xl">Hola.</h1>
           <h2 className="text-2xl mt-2">David Recheni</h2>
           <div className="mt-2 text-lg text-slate-300">
             <h2>Multimedia designer</h2>
@@ -16,7 +16,7 @@ const HomeContainer = () => {
       </div>
 
       <div className="flex w-full h-screen relative">
-        <div className="absolute w-full h-screen xl:-top-44 -top-20">
+        <div className="absolute w-full h-full -top-44 lg:-top-20">
           <SculptureScene />
         </div>
 

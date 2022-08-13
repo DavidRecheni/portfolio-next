@@ -29,13 +29,6 @@ function SculptureScene() {
           position={[0, -4.5, -5]}
         />
         <DavidSculpture scale={0.8} position={[-1.5, -4, -3.5]} />
-        <ContactShadows
-          position={[0.6, -5.3, 0]}
-          opacity={1}
-          scale={14}
-          blur={2}
-          far={6}
-        />
         <PostProcessingDynamic />
       </Suspense>
     </Canvas>
