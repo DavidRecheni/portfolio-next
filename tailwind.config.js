@@ -2,6 +2,8 @@ module.exports = {
   darkMode: "class",
   mode: 'jit',
   content: [
+    "node_modules/daisyui/dist/**/*.js",
+    "node_modules/react-daisyui/dist/**/*.js",
     "./pages/**/*.{ts,tsx}",
     "./components/**/*.{ts,tsx}",
     "./modules/**/*.{ts,tsx}",
@@ -18,5 +20,5 @@ module.exports = {
       borderWidth: ['hover'],
     },
   },
-  plugins: [],
+  plugins: [require('daisyui')],
 }

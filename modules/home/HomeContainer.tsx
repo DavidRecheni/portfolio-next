@@ -1,5 +1,6 @@
 import Link from "next/link";
 import SculptureScene from "./components/SculptureScene";
+import { Button } from "react-daisyui";
 
 const HomeContainer = () => {
   return (
@@ -22,9 +23,9 @@ const HomeContainer = () => {
 
         <div className="absolute h-screen right-14 2xl:right-48 flex flex-col justify-end 2xl:justify-center">
           <Link href="/cv">
-            <h2 className="mt-20 mr-20 2xl:mb-0 mb-20 hover:cursor-pointer border-b-2 px-1 pb-1 border-slate-400 hover:border-white border- text-3xl text-white">
+            <Button color="ghost" className="text-3xl">
               CV
-            </h2>
+            </Button>
           </Link>
         </div>
       </div>
