@@ -1,14 +1,7 @@
-import { ContactShadows } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-import dynamic from "next/dynamic";
 import { Suspense } from "react";
-import DavidSculpture from "./DavidSculpture";
 import Loader from "./Loader";
-import Triangle from "./Triangle";
-
-const PostProcessingDynamic = dynamic(() => import("./PostProcessing"), {
-  ssr: false,
-});
+import Models from "./Models";
 
 function SculptureScene() {
   return (
@@ -23,13 +16,7 @@ function SculptureScene() {
       />
 
       <Suspense fallback={<Loader />}>
-        <Triangle
-          scale={0.025}
-          rotation={[0, 0, Math.PI / 3]}
-          position={[0, -4.5, -5]}
-        />
-        <DavidSculpture scale={0.8} position={[-1.5, -4, -3.5]} />
-        <PostProcessingDynamic />
+        <Models />
       </Suspense>
     </Canvas>
   );
