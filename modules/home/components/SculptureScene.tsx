@@ -1,6 +1,4 @@
 import { Canvas } from "@react-three/fiber";
-import { Suspense } from "react";
-import Loader from "./Loader";
 import Models from "./Models";
 
 function SculptureScene() {
@@ -15,9 +13,7 @@ function SculptureScene() {
         intensity={1.25}
       />
 
-      <Suspense fallback={<Loader />}>
-        <Models />
-      </Suspense>
+      <Models />
     </Canvas>
   );
 }
