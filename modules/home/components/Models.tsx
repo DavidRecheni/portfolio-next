@@ -14,7 +14,7 @@ const Models = () => {
       <Triangle
         scale={0.025}
         rotation={[0, 0, Math.PI / 3]}
-        position={[0, -4.5, -5]}
+        position={[1, -4.5, -5]}
       />
       <DavidSculpture scale={0.8} position={[-1.5, -4, -3.5]} />
       <PostProcessingDynamic />
