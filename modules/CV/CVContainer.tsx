@@ -16,7 +16,7 @@ const CVContainer = () => {
 
       <div className="border-b-4 border-black dark:border-white my-4" />
 
-      <div className="flex gap-6 flex-col sm:flex-row">
+      <div className="flex gap-6 flex-col sm:flex-row w-full">
         <LeftColumn />
         <RightColumn />
       </div>

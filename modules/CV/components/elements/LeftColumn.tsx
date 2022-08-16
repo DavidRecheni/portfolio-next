@@ -7,7 +7,7 @@ import ContactDataContainer from "./TopRow/ContactDataContainer";
 
 const LeftColumn = () => {
   return (
-    <div className="flex w-fit sm:w-4/12 flex-col gap-y-2">
+    <div className="flex w-full flex-col gap-y-2">
       <div className="flex sm:flex-col w-full">
         <div className="flex flex-col print:flex-row">
           <ProfileImageContainer />

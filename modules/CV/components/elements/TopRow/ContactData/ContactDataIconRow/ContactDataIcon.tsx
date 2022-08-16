@@ -11,9 +11,9 @@ const ContactDataIcon: React.FC<{
       target="_blank"
       rel="noreferrer"
     >
-      <div className="font-medium flex items-center gap-2 text-2xl print:text-xl">
+      <div className="font-medium flex items-center gap-2 text-xl">
         {icon?.icon({})}
-        <span className="text-sm hidden print:block">{icon.url}</span>
+        <span className="text-sm print:block">{icon.url}</span>
       </div>
     </a>
   );

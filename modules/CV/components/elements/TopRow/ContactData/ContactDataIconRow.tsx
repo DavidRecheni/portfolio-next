@@ -6,7 +6,7 @@ interface ContactDataIconRowProps {
 }
 const ContactDataIconRow: React.FC<ContactDataIconRowProps> = ({ data }) => {
   return (
-    <div className="flex gap-2 mt-1 sm:mt-0 p-2 print:flex-col">
+    <div className="flex flex-col gap-2 mt-1 sm:mt-0 p-2">
       {data.map((s) => (
         <ContactDataIcon icon={s} key={s.url} />
       ))}
