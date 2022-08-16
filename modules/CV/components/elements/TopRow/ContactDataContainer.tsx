@@ -21,7 +21,6 @@ const socialMedia = [
 const ContactDataContainer = () => (
   <div className="flex flex-col ">
     <Header>Contact me</Header>
-
     <ContactDataIconRow data={socialMedia} />
   </div>
 );
