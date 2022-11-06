@@ -1,4 +1,3 @@
-import { BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
 import NavBar from "./components/NavBar";
 import SculptureScene from "./components/SculptureScene";
 import SocialMedia from "./components/SocialMedia";
@@ -9,8 +8,8 @@ const HomeContainer = () => {
       <div className=" h-full w-screen flex items-center justify-between  px-36">
         <div className="flex items-end md:items-center">
           <div className="flex flex-col">
-            <h1 className="font-['Abhaya\\Libre'] text-8xl">Hola.</h1>
-            <h2 className="text-2xl mt-2">David Recheni</h2>
+            <h1 className="font-['Abhaya\\Libre'] text-8xl">David</h1>
+            <h1 className="font-['Abhaya\\Libre'] text-8xl">Recheni</h1>
             <div className="mt-2 text-lg text-slate-300">
               <h2>Multimedia designer</h2>
               <h2>Full-stack web3 dev</h2>
