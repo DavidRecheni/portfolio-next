@@ -12,7 +12,7 @@ const SocialMediaIcon = ({ icon: Icon, href }: IProps) => {
       href={href}
       target="_blank"
       rel="noreferrer"
-      className="hover:text-black transition duration-300 ease-out"
+      className="hover:text-slate-300"
     >
       <Icon size={34} />
     </a>
