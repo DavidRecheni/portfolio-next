@@ -27,6 +27,18 @@ const data = {
 
   experience: [
     {
+      date: { start: "09/2022", end: "Current" },
+      place: "Munich, DE",
+      institution: {
+        name: "Tangany GmbH",
+        link: "https://tangany.com/",
+      },
+      title: "Sr Full-stack Developer",
+      stack: "React, Typescript, TailwindCSS, Relay, Storybooks, NestJs, GraphQL, AWS",
+      description:
+        "• Improve and implement design and architecture of a self service portal. • Create and maintain a company UI library.  • Perform code reviews and enforce high quality coding standards. • Create and maintain the company linter ruleset. • Mentor Front-end devs • Validate UX Design decisions and propose solutions. ",
+    },
+    {
       date: { start: "08/2021", end: "Current" },
       place: "Berlin, DE",
       institution: {
