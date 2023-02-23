@@ -1,13 +1,32 @@
+@media screen and (min-width: 0px) {
+  .blob::before {
+    width: 350px;
+    height: 350px;
+  }
+}
+  
+@media screen and (min-width: 768px) {
+  .blob::before {
+    width: 450px;
+    height: 450px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .blob::before {
+    width: 650px;
+    height: 650px;
+  }
+}
+  
 .blob::before {
 	position: absolute;
 	content: "";
 	left: 0px;
   right: 0px;
-  margin-left: auto;
-  margin-right: auto;
-	top: 15%;
-	width: 650px;
-	height: 650px;
+  margin: auto;
+	top: 0px;
+  bottom: 0px;
 	background: rgba(255, 255, 255, 0.2);
   filter: hue-rotate(180deg);
 	border-radius: 62% 47% 92% 35% / 45% 45% 90% 66%;
