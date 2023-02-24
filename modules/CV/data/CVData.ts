@@ -39,7 +39,7 @@ const data = {
         "• Improve and implement design and architecture of a self service portal. • Create and maintain a company UI library.  • Perform code reviews and enforce high quality coding standards. • Create and maintain the company linter ruleset. • Mentor Front-end devs • Come up with creative design solutions based on aesthetic and technical constraints. ",
     },
     {
-      date: { start: "08/2021", end: "Current" },
+      date: { start: "08/2021", end: "08/2022" },
       place: "Berlin, DE",
       institution: {
         name: "Lhotse Technologies GmbH",
