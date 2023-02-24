@@ -105,20 +105,20 @@ const data = {
   projects: [
     {
       icon: GiChaingun,
-      name: "Chaintree - web3 project (WIP)",
-      url: "https://chaintree.xyz/",
+      name: "Chaintree - Metamask backend login POC",
+      url: "https://main.d1m4v20wvlpjin.amplifyapp.com",
     },
 
     {
       icon: BsFillCreditCard2FrontFill,
-      name: "3d card customizer",
+      name: "3d Card Customizer",
       url: "https://3d-card-viewer.netlify.app/",
       gitUrl: "https://github.com/DavidRecheni/3d-card-customizable",
     },
     {
       icon: GiCardJoker,
-      name: "DavidRecheni.dev",
-      url: "https://davidrecheni.dev/",
+      name: "Personal portfolio",
+      url: "https://davidrecheni.com/",
       gitUrl: "https://github.com/DavidRecheni/portfolio-next",
     },
     {
