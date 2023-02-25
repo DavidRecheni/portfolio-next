@@ -2157,9 +2157,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"daisyui@npm:^2.38.1":
-  version: 2.38.1
-  resolution: "daisyui@npm:2.38.1"
+"daisyui@npm:^2.51.0":
+  version: 2.51.0
+  resolution: "daisyui@npm:2.51.0"
   dependencies:
     color: ^4.2
     css-selector-tokenizer: ^0.8.0
@@ -2168,7 +2168,7 @@ __metadata:
   peerDependencies:
     autoprefixer: ^10.0.2
     postcss: ^8.1.6
-  checksum: 0f36fa53ae8b3903c73b73dd39070da8c09bf6ea21a198d6c52a401fac18f276b0c062c32c4670eb7a1b63cc3753ee9489469adfbab25cb73f63191dc11ce2fe
+  checksum: cb0bb1b2c6317008b4997267236c6269771e9faae6768b37e998d35db06e83069ecba248b16c906347b0a35e0320a99d87d3bc23175531ca6dd2472bf8beff68
   languageName: node
   linkType: hard
 
@@ -4695,7 +4695,7 @@ __metadata:
     "@types/three": ^0.144.0
     autoprefixer: ^10.4.13
     babel-loader: ^9.1.0
-    daisyui: ^2.38.1
+    daisyui: ^2.51.0
     eslint: 8.27.0
     eslint-config-next: 13.0.2
     eslint-config-prettier: ^8.5.0
@@ -4707,7 +4707,6 @@ __metadata:
     next-transpile-modules: ^10.0.0
     postcss: ^8.4.18
     react: 18.2.0
-    react-daisyui: ^2.4.6
     react-dom: 18.2.0
     react-icons: ^4.6.0
     storybook-addon-next: ^1.6.7
@@ -4961,18 +4960,6 @@ __metadata:
   peerDependencies:
     react: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
   checksum: ef7c52dc61588233ec7f70b3bae8a2325562e2eff3648e7bc6962162568c36d7e27f165d4639f8bfa18fadb09585577858e35273ce0039ac02e87c9debfd268e
-  languageName: node
-  linkType: hard
-
-"react-daisyui@npm:^2.4.6":
-  version: 2.4.6
-  resolution: "react-daisyui@npm:2.4.6"
-  peerDependencies:
-    daisyui: ^2.24.0
-    react: ">=16"
-    react-dom: ">=16"
-    tailwindcss: ^3.0.23
-  checksum: ecce31de7176c911a17df7ce3d2973f8743eee3a1924afbe9ab70cd347fb9fc71922059993e09d944ab94a934b0c1e1d8c65ac45c7f085f8252a5fb8615048b1
   languageName: node
   linkType: hard
 

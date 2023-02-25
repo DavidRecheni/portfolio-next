@@ -14,7 +14,7 @@ const SocialMediaIcon = ({ icon: Icon, href }: IProps) => {
       rel="noreferrer"
       className="hover:text-black transition duration-300 ease-out"
     >
-      <Icon size={34} />
+      <Icon size={30} />
     </a>
   );
 };
