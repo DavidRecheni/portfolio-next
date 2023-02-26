@@ -1,16 +1,8 @@
-import { BsFillCreditCard2FrontFill } from "react-icons/bs";
-import {
-  Gi3DMeeple,
-  GiCardJoker,
-  GiChaingun,
-  GiDeathStar,
-} from "react-icons/gi";
-
 const data = {
   name: "David Recheni",
-  role: "Fullstack + web3 developer",
+  role: "Full-stack Typescript + Web3 developer",
   about:
-    "Hallo! I’m a 30 y.o. Argentinian that lives in Berlin since February 2020. I’m always eager to learn new things. I feel comfortable accepting responsibilities and coordinating teams. Due to my studies as Designer and Dev, and my long experience working as freelancer, I can ideate, design, develop and deploy solutions from scratch. I’ve worked as Full-stack developer most of my carreer but I decided to specialize in Frontend. I’ve been working exclusively with React since I arrived to Germany",
+    "Hallo! I'm a 30 y.o. Argentinian that lives in Berlin since February 2020. I'm always eager to learn new things. I feel comfortable accepting responsibilities and coordinating teams. Due to my studies as Designer and Dev, and my long experience working as freelancer, I can ideate, design, develop and deploy solutions. I've worked as Full-stack developer most of my career but I currently specialize on React, Typescript and Web3. I'm also a big fan of Uncle Bob and the SOLID principles and I'm always looking for ways to improve my code quality. I'm currently looking for a new challenge. Feel free to contact me!",
 
   certificates: [
     {
@@ -100,55 +92,22 @@ const data = {
     },
   ],
 
-  linkedinProfile: "david-recheni",
-
-  projects: [
-    {
-      icon: GiChaingun,
-      name: "Chaintree - Metamask backend login POC",
-      url: "https://main.d1m4v20wvlpjin.amplifyapp.com",
-    },
-
-    {
-      icon: BsFillCreditCard2FrontFill,
-      name: "3d Card Customizer",
-      url: "https://3d-card-viewer.netlify.app/",
-      gitUrl: "https://github.com/DavidRecheni/3d-card-customizable",
-    },
-    {
-      icon: GiCardJoker,
-      name: "Personal portfolio",
-      url: "https://davidrecheni.com/",
-      gitUrl: "https://github.com/DavidRecheni/portfolio-next",
-    },
-    {
-      icon: GiDeathStar,
-      name: "Star wars force graph",
-      url: "https://master.dag66l2ggpz29.amplifyapp.com/",
-      gitUrl: "https://github.com/DavidRecheni/SW-Force-Graph",
-    },
-    {
-      icon: Gi3DMeeple,
-      name: "3d viewer",
-      url: "http://simple-react-three-viewer.netlify.app/",
-      gitUrl: "https://github.com/DavidRecheni/react-3d-viewr",
-    },
-  ],
-
   skills: [
     "AWS Amplify",
-    "Scrum",
+    "Cypress",
     "Ethers.js",
-    "Express",
     "GIT",
     "GraphQL",
     "Mongodb",
     "Mongoose",
+    "NestJS",
+    "Next.js",
     "Node.js",
     "React",
     "React query",
     "REST",
     "SASS",
+    "Scrum",
     "Solidity",
     "Tailwindcss",
     "Three.js",

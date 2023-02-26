@@ -1,7 +1,6 @@
 import ContactDataContainer from "../TopRow/components/ContactDataContainer";
 import CertificatesContainer from "./components/CertificatesContainer";
 import LanguagesContainer from "./components/LanguagesContainer";
-import LiveProjectsContainer from "./components/LiveProjectsContainer";
 import ProfileImageContainer from "./components/ProfileImageContainer";
 import SkillsContainer from "./components/SkillsContainer";
 
@@ -13,7 +12,6 @@ const LeftColumn=() => {
           <ProfileImageContainer />
           <ContactDataContainer />
         </div>
-        <LiveProjectsContainer />
       </div>
       <SkillsContainer />
       <div className="flex w-full sm:flex-col gap-4">

@@ -1,8 +1,8 @@
 import data from "../../../data/CVData";
 
-const NameAndRole: React.FC = () => {
+const NameAndRole: React.FC=() => {
   return (
-    <div>
+    <div className="print:flex items-center gap-4">
       <div className="text-3xl sm:text-5xl font-bold dark:text-white">
         {data.name}
       </div>
