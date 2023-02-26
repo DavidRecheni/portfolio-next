@@ -22,15 +22,15 @@ const Project=({ project }: IProps) => {
 
       <div className="flex flex-col gap-y-2 border-t mt-2 pt-2 border-white">
 
-        <h2 className="text-3xl">{project.title}</h2>
-
-        <div className="flex justify-between items-end">
+        <div className="flex justify-between items-start">
           <div className="flex gap-2">
             <IconLink link={{ to: project.link, icon: BiWorld, alt: "Website" }} />
             {project.repo&&<IconLink link={{ to: project.repo, icon: BsGithub, alt: "Repository" }} />}
           </div>
           <p>{project.creationDate}</p>
         </div>
+
+        <h2 className="text-3xl">{project.title}</h2>
 
         <p className="px-2">{project.description}</p>
 

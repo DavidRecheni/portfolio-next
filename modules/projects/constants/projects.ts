@@ -12,7 +12,7 @@ const projects=[
     link: 'https://main.d1m4v20wvlpjin.amplifyapp.com',
     repo: '',
     image: chaintree,
-    creationDate: 'In progress..',
+    creationDate: 'In progress...',
   },
   {
     title: 'Portfolio',
