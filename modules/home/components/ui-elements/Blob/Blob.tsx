@@ -1,6 +1,5 @@
-import { NextPage } from "next";
 import styles from "./Blob.module.css";
-const Blob: NextPage = () => {
+const Blob=() => {
   return <div className={styles.blob} />;
 };
 
