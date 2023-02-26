@@ -3,22 +3,22 @@ import data from "../../../data/CVData";
 import Header from "../../layout/Header";
 import ContactDataIconRow from "./ContactData/ContactDataIconRow";
 
-const socialMedia = [
+const socialMedia=[
   {
     icon: BsEnvelopeFill,
-    url: data.email,
+    url: "davidrecheni@gmail.com",
     mail: true,
   },
   {
     icon: BsGithub,
-    url: `https://github.com/${data.githubUsername}`,
+    url: `https://github.com/DavidRecheni`,
   },
   {
     icon: BsLinkedin,
-    url: `http://linkedin.com/in/${data.linkedinProfile}/`,
+    url: `https://www.linkedin.com/in/david-recheni/`,
   },
 ];
-const ContactDataContainer = () => (
+const ContactDataContainer=() => (
   <div className="flex flex-col ">
     <Header>Contact me</Header>
     <ContactDataIconRow data={socialMedia} />

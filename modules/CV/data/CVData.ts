@@ -1,6 +1,5 @@
 const data = {
-  name: "David Recheni",
-  role: "Full-stack Typescript + Web3 developer",
+
   about:
     "Hallo! I'm a 30 y.o. Argentinian that lives in Berlin since February 2020. I'm always eager to learn new things. I feel comfortable accepting responsibilities and coordinating teams. Due to my studies as Designer and Dev, and my long experience working as freelancer, I can ideate, design, develop and deploy solutions. I've worked as Full-stack developer most of my career but I currently specialize on React, Typescript and Web3. I'm also a big fan of Uncle Bob and the SOLID principles and I'm always looking for ways to improve my code quality. I'm currently looking for a new challenge. Feel free to contact me!",
 
@@ -14,8 +13,6 @@ const data = {
       details: "ComunidadIT",
     },
   ],
-
-  email: "davidrecheni@gmail.com",
 
   experience: [
     {
@@ -75,7 +72,6 @@ const data = {
     },
   ],
 
-  githubUsername: "DavidRecheni",
 
   languages: [
     {
