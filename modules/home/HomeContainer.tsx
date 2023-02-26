@@ -1,6 +1,6 @@
-import Blob from "./components/Blob/Blob";
-import NavBar from "./components/NavBar";
-import SocialMedia from "./components/SocialMedia";
+import Blob from "./components/ui-elements/Blob/Blob";
+import Nav from "./components/NavBar/Nav";
+import SocialMedia from "./components/SocialMedia/SocialMedia";
 
 const HomeContainer = () => {
   return (
@@ -21,7 +21,7 @@ const HomeContainer = () => {
           </div>
         </div>
 
-        <NavBar />
+        <Nav />
       </div>
       <Blob />
 

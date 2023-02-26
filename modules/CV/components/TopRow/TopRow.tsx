@@ -1,7 +1,7 @@
-import NameAndRole from "./TopRow/NameAndRole";
-import ToggleDarkMode from "./TopRow/ToggleDarkMode";
+import NameAndRole from "./components/NameAndRole";
+import ToggleDarkMode from "./components/ToggleDarkMode";
 
-const TopRow = () => {
+const TopRow=() => {
   return (
     <div className="flex justify-between items-center">
       <NameAndRole />

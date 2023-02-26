@@ -1,15 +1,14 @@
-import React from "react";
 import { IconType } from "react-icons/lib";
 
 interface IProps {
   icon: IconType;
-  href: string;
+  to: string;
 }
 
-const SocialMediaIcon = ({ icon: Icon, href }: IProps) => {
+const IconLink=({ icon: Icon, to }: IProps) => {
   return (
     <a
-      href={href}
+      href={to}
       target="_blank"
       rel="noreferrer"
       className="hover:text-black transition duration-300 ease-out"
@@ -19,4 +18,4 @@ const SocialMediaIcon = ({ icon: Icon, href }: IProps) => {
   );
 };
 
-export default SocialMediaIcon;
+export default IconLink;

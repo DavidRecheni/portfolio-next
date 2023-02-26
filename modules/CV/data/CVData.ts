@@ -124,7 +124,7 @@ const data = {
     {
       icon: GiDeathStar,
       name: "Star wars force graph",
-      url: "https://sw-forcegraph.netlify.app/",
+      url: "https://master.dag66l2ggpz29.amplifyapp.com/",
       gitUrl: "https://github.com/DavidRecheni/SW-Force-Graph",
     },
     {

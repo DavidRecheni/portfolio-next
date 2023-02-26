@@ -1,11 +1,11 @@
-import CertificatesContainer from "./LeftColumn/CertificatesContainer";
-import LanguagesContainer from "./LeftColumn/LanguagesContainer";
-import LiveProjectsContainer from "./LeftColumn/LiveProjectsContainer";
-import ProfileImageContainer from "./LeftColumn/ProfileImageContainer";
-import SkillsContainer from "./LeftColumn/SkillsContainer";
-import ContactDataContainer from "./TopRow/ContactDataContainer";
+import ContactDataContainer from "../TopRow/components/ContactDataContainer";
+import CertificatesContainer from "./components/CertificatesContainer";
+import LanguagesContainer from "./components/LanguagesContainer";
+import LiveProjectsContainer from "./components/LiveProjectsContainer";
+import ProfileImageContainer from "./components/ProfileImageContainer";
+import SkillsContainer from "./components/SkillsContainer";
 
-const LeftColumn = () => {
+const LeftColumn=() => {
   return (
     <div className="flex w-full flex-col gap-y-2">
       <div className="flex sm:flex-col w-full">

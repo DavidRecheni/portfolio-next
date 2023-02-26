@@ -1,7 +1,6 @@
 import Head from "next/head";
-import React from "react";
 
-const PageHead = () => {
+const PageHead=() => {
   return (
     <Head>
       <title>David Recheni</title>
