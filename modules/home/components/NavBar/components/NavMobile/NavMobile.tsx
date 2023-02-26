@@ -35,7 +35,7 @@ const NavMobile=() => {
       ref={containerRef}
       className="md:hidden absolute top-0 right-0 bottom-0 w-60">
 
-      <motion.div className="absolute top-0 right-0 bottom-0 w-60 bg-white opacity-50" variants={sidebar} />
+      <motion.div className="absolute top-0 right-0 bottom-0 w-60 bg-white opacity-90" variants={sidebar} />
       <NavigationList />
       <MenuToggle toggle={() => toggleOpen()} />
 
