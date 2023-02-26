@@ -5,6 +5,8 @@ import SocialMedia from "./components/SocialMedia/SocialMedia";
 const HomeContainer=() => {
   return (
     <div className="flex flex-col relative h-screen text-white">
+      <Blob />
+      <SocialMedia />
       <div className="h-full w-screen flex items-center justify-between px-2 sm:px-16 xl:px-36">
         <div className="flex items-end md:items-center">
           <div className="flex flex-col">
@@ -24,8 +26,6 @@ const HomeContainer=() => {
         <Nav />
       </div>
 
-      <Blob />
-      <SocialMedia />
     </div>
   );
 };

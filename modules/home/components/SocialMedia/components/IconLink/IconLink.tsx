@@ -1,6 +1,5 @@
 import { IconType } from "react-icons/lib";
-import ILink from "../../../NavBar/types/ILink";
-
+import { motion } from 'framer-motion'
 interface IProps {
   link: {
     to: string;
@@ -11,14 +10,15 @@ interface IProps {
 
 const IconLink=({ link: { to, icon: Icon, alt } }: IProps) => {
   return (
-    <a
+    <motion.a
       href={to}
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.95 }}
       target="_blank"
       rel="noreferrer"
-      className="hover:text-black transition duration-300 ease-out"
     >
       <Icon size={30} title={alt} />
-    </a>
+    </motion.a>
   );
 };
 
