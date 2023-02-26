@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { motion, useCycle } from "framer-motion";
 import { MenuToggle } from "./components/MenuToggle/MenuToggle";
-import NavigationList from "./components/MobileNavigationList/MobileNavigationList";
+import MobileNavigationList from "./components/MobileNavigationList/MobileNavigationList";
 
 const sidebar={
   open: (height=1000) => ({
@@ -36,7 +36,7 @@ const NavMobile=() => {
       className="md:hidden absolute top-0 right-0 bottom-0 w-60">
 
       <motion.div className="absolute top-0 right-0 bottom-0 w-60 bg-white opacity-90" variants={sidebar} />
-      <NavigationList />
+      <MobileNavigationList />
       <MenuToggle toggle={() => toggleOpen()} />
 
     </motion.nav>

@@ -29,7 +29,7 @@ const NavButton=({ to, children, className }: IProps) => {
       variants={variants}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
-      className={`mb-5 flex item-center cursor-pointer text-black rounded-md px-5 py-2 font-medium text-3xl ${className}`}
+      className={`mb-5 flex item-center cursor-pointer rounded-md px-5 py-2 font-medium text-3xl ${className}`}
     >
       <Link href={to}>
         {children}
