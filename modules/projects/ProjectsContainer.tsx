@@ -4,7 +4,7 @@ import SmallBlob from '../home/components/ui-elements/SmallBlob/SmallBlob'
 import ProjectsList from './components/ProjectsList/ProjectsList'
 const ProjectsContainer=() => {
   return (
-    <div className="flex flex-col relative h-full overflow-x-hidden text-white items-center gap-y-16 pt-32 px-2 sm:px-16 xl:px-28">
+    <div className="flex flex-col relative h-full overflow-x-hidden text-white items-center md:gap-y-16 pt-20 md:pt-32 px-2 sm:px-16 xl:px-28">
       <SocialMedia />
       <div className="absolute top-0 left-0">
         <Link href={'/'}>
