@@ -1,11 +1,15 @@
 import { IconType } from "react-icons/lib";
+import ILink from "../../../NavBar/types/ILink";
 
 interface IProps {
-  icon: IconType;
-  to: string;
+  link: {
+    to: string;
+    icon: IconType;
+    alt: string;
+  }
 }
 
-const IconLink=({ icon: Icon, to }: IProps) => {
+const IconLink=({ link: { to, icon: Icon, alt } }: IProps) => {
   return (
     <a
       href={to}
@@ -13,7 +17,7 @@ const IconLink=({ icon: Icon, to }: IProps) => {
       rel="noreferrer"
       className="hover:text-black transition duration-300 ease-out"
     >
-      <Icon size={30} />
+      <Icon size={30} title={alt} />
     </a>
   );
 };
