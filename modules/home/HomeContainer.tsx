@@ -1,9 +1,10 @@
 import Blob from "./components/ui-elements/Blob/Blob";
 import Nav from "./components/NavBar/Nav";
 import SocialMedia from "./components/SocialMedia/SocialMedia";
-import Badge from "./components/ui-elements/Badge/Badge";
+import Badge from "./components/Prices/Badge/Badge";
+import Prices from "./components/Prices";
 
-const HomeContainer=() => {
+const HomeContainer = () => {
   return (
     <div className="flex flex-col relative h-screen text-white">
       <Blob />
@@ -21,13 +22,12 @@ const HomeContainer=() => {
             <h2>Developer</h2>
           </div>
           <div className="pt-10">
-            <Badge />
+            <Prices />
           </div>
         </div>
 
         <Nav />
       </div>
-
     </div>
   );
 };
