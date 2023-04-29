@@ -13,6 +13,7 @@ const Prices = () => {
       <Badge
         image={ethzurich}
         title="Winner"
+        description="1st Place"
         event={{ name: "ETH Zurich'23", url: "https://ethereumzuri.ch/" }}
       />
     </div>
