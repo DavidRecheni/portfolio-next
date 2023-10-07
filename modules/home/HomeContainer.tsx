@@ -18,8 +18,9 @@ const HomeContainer = () => {
             <h1 className="font-['Abhaya\\Libre'] -mt-16 -mb-8">Recheni</h1>
           </div>
           <div className="text-4xl xl:text-5xl text-slate-300 font-light">
+            <h2>Full-stack TS Developer</h2>
             <h2>Interaction designer</h2>
-            <h2>Developer</h2>
+            <h2>Entrepreneur</h2>
           </div>
           <div className="pt-10">
             <Prices />
