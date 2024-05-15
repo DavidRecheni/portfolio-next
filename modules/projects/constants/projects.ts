@@ -26,7 +26,7 @@ const projects = [
     creationDate: "In progress...",
   },
   {
-    title: "Chaintree (WIP)",
+    title: "Chaintree",
     description:
       "App with Metamask based backend login through signature verification that allows users to create and manage special NFTs",
     tags: [
@@ -47,7 +47,7 @@ const projects = [
     link: "https://main.d1m4v20wvlpjin.amplifyapp.com",
     repo: "",
     image: chaintree,
-    creationDate: "unfinished",
+    creationDate: "In progress...",
   },
   {
     title: "Portfolio",
@@ -58,7 +58,6 @@ const projects = [
       "Tailwindcss",
       "Nextjs",
       "Framer Motion",
-      "Responsive",
       "AWS Amplify",
     ],
     link: "http://davidrecheni.com",

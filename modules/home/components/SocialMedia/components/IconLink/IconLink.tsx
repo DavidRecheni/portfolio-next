@@ -1,14 +1,14 @@
 import { IconType } from "react-icons/lib";
-import { motion } from 'framer-motion'
+import { motion } from "framer-motion";
 interface IProps {
   link: {
     to: string;
     icon: IconType;
     alt: string;
-  }
+  };
 }
 
-const IconLink=({ link: { to, icon: Icon, alt } }: IProps) => {
+const IconLink = ({ link: { to, icon: Icon, alt } }: IProps) => {
   return (
     <motion.a
       href={to}

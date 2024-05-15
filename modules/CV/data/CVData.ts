@@ -1,7 +1,6 @@
 const data = {
-
   about:
-    "Hallo! I'm a 30 y.o. Argentinian that lives in Berlin since February 2020. I'm always eager to learn new things. I feel comfortable accepting responsibilities and coordinating teams. Due to my studies as Designer and Dev, and my long experience working as freelancer, I can ideate, design, develop and deploy solutions. I've worked as Full-stack developer most of my career but I currently specialize on React, Typescript and Web3. I'm also a big fan of Uncle Bob and the SOLID principles and I'm always looking for ways to improve my code quality. I'm currently looking for a new challenge. Feel free to contact me!",
+    "I focus on helping early-stage startups by building their products and making their processes run smoother. I'm good at coding and understand how startups work, so I thrive in fast-paced settings where being creative and flexible is key. I've worked on making software that grows with a company, using new technologies to help it expand, and working closely with different teams to get things done. I'm passionate about using technology to make startups succeed, bringing both technical skills and an entrepreneurial mindset to every project.",
 
   certificates: [
     {
@@ -16,14 +15,28 @@ const data = {
 
   experience: [
     {
-      date: { start: "09/2022", end: "Current" },
+      date: { start: "02/2023", end: "current" },
+      place: "Berlin, DE",
+      institution: {
+        name: "Kwest",
+        link: "https://getkwest.com/",
+      },
+      title: "Sr Front-end Developer",
+      stack:
+        "React, Typescript, ChakraUI, Apollo gql, Storybooks, Playwright, AWS",
+      description:
+        "• Improve architecture of their main app to make it scalable.  • Perform code reviews and enforce high quality coding standards. • Helped improve agile processes. • Added e2e tests to the app.",
+    },
+    {
+      date: { start: "09/2022", end: "02/2023" },
       place: "Munich, DE",
       institution: {
         name: "Tangany GmbH",
         link: "https://tangany.com/",
       },
       title: "Sr Full-stack Developer",
-      stack: "React, Typescript, TailwindCSS, Relay, Storybooks, NestJs, GraphQL, AWS",
+      stack:
+        "React, Typescript, TailwindCSS, Relay, Storybooks, NestJs, GraphQL, AWS",
       description:
         "• Improve and implement design and architecture of a self service portal. • Create and maintain a company UI library.  • Perform code reviews and enforce high quality coding standards. • Create and maintain the company linter ruleset. • Mentor Front-end devs • Come up with creative design solutions based on aesthetic and technical constraints. ",
     },
@@ -55,7 +68,7 @@ const data = {
     {
       date: { start: "12/2018", end: "03/2020" },
       place: "La Plata, ARG",
-      institution: { name: "Avanade", link: "https://www.avanade.com/" },
+      institution: { name: "Accenture", link: "https://www.Accenture.com/" },
       title: "Lead Full-Stack Developer",
       stack: "AngularJS, NodeJS, Bootstrap, .NET",
       description:
@@ -64,14 +77,13 @@ const data = {
     {
       date: { start: "06/2018", end: "12/2018" },
       place: "La Plata, ARG",
-      institution: { name: "Avanade", link: "https://www.avanade.com/" },
+      institution: { name: "Accenture", link: "https://www.Accenture.com/" },
       title: "Sr Full-Stack Developer",
       stack: "AngularJS, NodeJS, Bootstrap, .NET",
       description:
         "• Develop web-apps in a very fast moving enviroment • Mentor new joiners",
     },
   ],
-
 
   languages: [
     {
@@ -92,26 +104,23 @@ const data = {
     "AWS Amplify",
     "Cypress",
     "Ethers.js",
-    "GIT",
-    "GraphQL",
+    "Apollo GraphQL",
     "Mongodb",
     "Mongoose",
     "NestJS",
     "Next.js",
     "Node.js",
+    "Playwright",
+    "Prisma",
     "React",
     "React query",
-    "REST",
-    "SASS",
-    "Scrum",
+    "Relay gql",
     "Solidity",
-    "Tailwindcss",
+    "Tailwind",
     "Three.js",
     "Truffle",
     "Typescript",
     "Styled components",
-    "Team management",
-    "UX Design",
     "Web3.js",
   ],
 

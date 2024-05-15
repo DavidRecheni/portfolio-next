@@ -10,19 +10,19 @@ const Badge = ({ image, title, description, event }: BadgeProps) => {
   return (
     <div className="flex flex-col justify-center">
       <a href={event.url} target="_blank" rel="noreferrer">
-        <div className="relative w-24 h-24 flex items-center justify-center">
+        <div className="relative w-20 h-20 flex items-center justify-center">
           <Image
             src={image}
             alt="Event logo"
             layout="fill"
             objectFit="contain"
           />
-          <div className="absolute top-0 bottom-0 -left m-auto w-28 h-6 bg-white text-black">
+          <div className="absolute top-0 bottom-0 -left m-auto w-24 h-8 bg-white text-black">
             <p className="text-center font-semibold">{title}</p>
           </div>
         </div>
-        {event.name}
-        <p className="text-sm italic">{description}</p>
+        <p className="font-light text-sm">{event.name}</p>
+        <p className="text-sm italic font-light">{description}</p>
       </a>
     </div>
   );

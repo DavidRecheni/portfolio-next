@@ -1,7 +1,7 @@
 import { BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
 import IconLink from "./components/IconLink/IconLink";
 
-const links=[
+const links = [
   {
     to: "https://github.com/DavidRecheni",
     icon: BsGithub,
@@ -19,10 +19,10 @@ const links=[
   },
 ];
 
-const SocialMedia=() => {
+const SocialMedia = () => {
   return (
     <div className="absolute top-0 left-0 right-0 ml-auto mr-auto w-44">
-      <div className="flex items-center justify-center gap-5 py-2 rounded-b-xl bg-cyan-600">
+      <div className="flex items-center justify-center gap-5 py-2 rounded-b-xl bg-white text-gray-900">
         {links.map((link) => (
           <IconLink link={link} key={link.to} />
         ))}
