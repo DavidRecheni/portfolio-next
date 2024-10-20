@@ -24,7 +24,7 @@ const projects = [
     link: "https://kopff.shop",
     repo: "",
     image: kopff,
-    creationDate: "In progress...",
+    creationDate: "Running",
   },
   {
     title: "Chaintree",
@@ -48,7 +48,7 @@ const projects = [
     link: "https://main.d1m4v20wvlpjin.amplifyapp.com",
     repo: "",
     image: chaintree,
-    creationDate: "In progress...",
+    creationDate: "Under construction...",
   },
   {
     title: "Portfolio",
