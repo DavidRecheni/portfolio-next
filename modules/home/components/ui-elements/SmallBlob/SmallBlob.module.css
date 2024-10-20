@@ -1,40 +1,46 @@
 .smallBlob::before {
-	position: absolute;
+  position: absolute;
   width: 50px;
   height: 50px;
-	content: "";
-	left: 20px;
-	top: 20px;
+  content: "";
+  left: 20px;
+  top: 20px;
   border: solid 2px #dddddd8f;
   border-radius: 62% 47% 92% 35% / 45% 45% 90% 66%;
-	will-change: border-radius, transform, opacity;
-	animation: blobShape 2.5s linear infinite;
-	display: block;
-	-webkit-animation: blobShape 1.48s linear infinite;
+  will-change: border-radius, transform, opacity;
+  animation: blobShape 2.5s linear infinite;
+  display: block;
+  -webkit-animation: blobShape 1.48s linear infinite;
 }
 
-
-.smallBlob:hover::before{
+.smallBlob:hover::before {
   border: solid 3px #dddddd9c;
-  -webkit-box-shadow: 0 0 10px #d0d4d647, 0 0 40px #d0d4d647, 0 0 80px #d0d4d647;
-          box-shadow: 0 0 10px #d0d4d647, 0 0 40px #d0d4d647, 0 0 80px #d0d4d647; 
+  -webkit-box-shadow:
+    0 0 10px #d0d4d647,
+    0 0 40px #d0d4d647,
+    0 0 80px #d0d4d647;
+  box-shadow:
+    0 0 10px #d0d4d647,
+    0 0 40px #d0d4d647,
+    0 0 80px #d0d4d647;
 }
 
-@keyframes blobShape{
-  0%,100%{
-  border-radius: 52% 58% 70% 30% / 55% 45% 55% 55%;
-    transform: translate3d(0,0,0) rotateZ(1deg);
+@keyframes blobShape {
+  0%,
+  100% {
+    border-radius: 52% 58% 70% 30% / 55% 45% 55% 55%;
+    transform: translate3d(0, 0, 0) rotateZ(1deg);
   }
-  30%{
-      border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
-    transform:  translate3d(0,5px,0) ;
+  30% {
+    border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+    transform: translate3d(0, 5px, 0);
   }
-  60%{
-    transform: translate3d(0,0,0);
+  60% {
+    transform: translate3d(0, 0, 0);
   }
 
-  67%{
-    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60% ;
-    transform: translate3d(0,-3px,0);
+  67% {
+    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+    transform: translate3d(0, -3px, 0);
   }
 }

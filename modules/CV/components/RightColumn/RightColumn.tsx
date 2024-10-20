@@ -2,7 +2,7 @@ import AboutContainer from "./components/AboutContainer";
 import EducationContainer from "./components/EducationContainer";
 import WorkExperience from "./components/WorkExperience";
 
-const RightColumn=() => {
+const RightColumn = () => {
   return (
     <div className="flex flex-col flex-grow">
       <AboutContainer />

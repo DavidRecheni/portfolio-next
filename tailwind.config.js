@@ -1,6 +1,6 @@
 module.exports = {
   darkMode: "class",
-  mode: 'jit',
+  mode: "jit",
   content: [
     "node_modules/daisyui/dist/**/*.js",
     "node_modules/react-daisyui/dist/**/*.js",
@@ -12,13 +12,13 @@ module.exports = {
     extend: {
       colors: {
         github: {
-          gray: '#c9d1d9',
-          dark: '#0d1117',
-          blue: '#4c8eda',
+          gray: "#c9d1d9",
+          dark: "#0d1117",
+          blue: "#4c8eda",
         },
       },
-      borderWidth: ['hover'],
+      borderWidth: ["hover"],
     },
   },
-  plugins: [require('daisyui')],
-}
+  plugins: [require("daisyui")],
+};

@@ -3,14 +3,14 @@ import { motion, useCycle } from "framer-motion";
 import { MenuToggle } from "./components/MenuToggle/MenuToggle";
 import MobileNavigationList from "./components/MobileNavigationList/MobileNavigationList";
 
-const sidebar={
-  open: (height=1000) => ({
-    clipPath: `circle(${height*2+200}px at 40px 40px)`,
+const sidebar = {
+  open: (height = 1000) => ({
+    clipPath: `circle(${height * 2 + 200}px at 40px 40px)`,
     transition: {
       type: "spring",
       stiffness: 20,
-      restDelta: 2
-    }
+      restDelta: 2,
+    },
   }),
   closed: {
     clipPath: "circle(30px at 187px 43px)",
@@ -18,30 +18,31 @@ const sidebar={
       delay: 0.3,
       type: "spring",
       stiffness: 400,
-      damping: 40
-    }
-  }
+      damping: 40,
+    },
+  },
 };
 
-const NavMobile=() => {
-  const [isOpen, toggleOpen]=useCycle(false, true);
-  const containerRef=useRef<HTMLElement>(null);
+const NavMobile = () => {
+  const [isOpen, toggleOpen] = useCycle(false, true);
+  const containerRef = useRef<HTMLElement>(null);
 
   return (
     <motion.nav
       initial={false}
-      animate={isOpen? "open":"closed"}
+      animate={isOpen ? "open" : "closed"}
       custom={containerRef.current?.offsetHeight}
       ref={containerRef}
-      className="md:hidden absolute top-0 right-0 bottom-0 w-60">
-
-      <motion.div className="absolute top-0 right-0 bottom-0 w-60 bg-white opacity-90" variants={sidebar} />
+      className="md:hidden absolute top-0 right-0 bottom-0 w-60"
+    >
+      <motion.div
+        className="absolute top-0 right-0 bottom-0 w-60 bg-white opacity-90"
+        variants={sidebar}
+      />
       <MobileNavigationList />
       <MenuToggle toggle={() => toggleOpen()} />
-
     </motion.nav>
   );
 };
 
 export default NavMobile;
-

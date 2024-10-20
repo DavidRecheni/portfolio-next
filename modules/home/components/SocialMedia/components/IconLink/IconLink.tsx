@@ -1,5 +1,6 @@
-import { IconType } from "react-icons/lib";
 import { motion } from "framer-motion";
+import type { IconType } from "react-icons/lib";
+
 interface IProps {
   link: {
     to: string;

@@ -1,4 +1,4 @@
-const links=[
+const links = [
   {
     to: "/cv",
     children: "CV",

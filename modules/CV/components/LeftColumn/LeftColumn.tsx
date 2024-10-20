@@ -4,7 +4,7 @@ import LanguagesContainer from "./components/LanguagesContainer";
 import ProfileImageContainer from "./components/ProfileImageContainer";
 import SkillsContainer from "./components/SkillsContainer";
 
-const LeftColumn=() => {
+const LeftColumn = () => {
   return (
     <div className="flex w-full flex-col gap-y-2">
       <div className="flex sm:flex-col w-full">

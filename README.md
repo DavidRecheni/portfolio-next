@@ -2,11 +2,11 @@
 
 ## Stack
 
-  * Nextjs
-  * Typescript
-  * Tailwindcss
-  * Storybooks
-  * Cypress
+- Nextjs
+- Typescript
+- Tailwindcss
+- Storybooks
+- Cypress
 
 ## Live version
 

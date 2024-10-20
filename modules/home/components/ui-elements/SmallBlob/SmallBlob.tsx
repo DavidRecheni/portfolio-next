@@ -1,5 +1,5 @@
 import styles from "./SmallBlob.module.css";
-const Blob=() => {
+const Blob = () => {
   return <div className={styles.smallBlob} />;
 };
 

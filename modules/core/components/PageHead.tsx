@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-const PageHead=() => {
+const PageHead = () => {
   return (
     <Head>
       <title>David Recheni</title>

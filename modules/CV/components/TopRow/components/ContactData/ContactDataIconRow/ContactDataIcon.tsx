@@ -2,11 +2,11 @@ import SocialMediaType from "../../../../../types/SocialMediaType";
 
 const ContactDataIcon: React.FC<{
   icon: SocialMediaType;
-}>=({ icon }) => {
+}> = ({ icon }) => {
   return (
     <a
       className="hover:text-blue-600"
-      href={icon.mail? `mailto:${icon.url}`:icon.url}
+      href={icon.mail ? `mailto:${icon.url}` : icon.url}
       target="_blank"
       rel="noreferrer"
     >

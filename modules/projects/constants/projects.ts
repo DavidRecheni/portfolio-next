@@ -1,9 +1,10 @@
-import chaintree from "../../../public/images/chaintree.jpg";
 import cardviewer from "../../../public/images/cardviewer.jpg";
-import portfolio from "../../../public/images/portfolio.jpg";
-import swgraph from "../../../public/images/swgraph.jpg";
+import chaintree from "../../../public/images/chaintree.jpg";
 import gltfviewer from "../../../public/images/gltfviewer.jpg";
 import kopff from "../../../public/images/kopff.png";
+import portfolio from "../../../public/images/portfolio.jpg";
+import swgraph from "../../../public/images/swgraph.jpg";
+
 const projects = [
   {
     title: "Kopff snacks",

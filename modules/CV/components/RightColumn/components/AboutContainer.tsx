@@ -2,7 +2,7 @@ import Header from "../../layout/Header";
 
 import data from "../../../data/CVData";
 
-const AboutContainer=() => (
+const AboutContainer = () => (
   <div className="flex flex-col">
     <Header>About me</Header>
     <div className="flex justify-center px-2">
