@@ -1,4 +1,7 @@
 {
+  "env": {
+    "es2024": true
+  },
   "extends": [
     "next/core-web-vitals",
     "prettier",
@@ -6,8 +9,22 @@
     "plugin:prettier/recommended"
   ],
   "rules": {
-    "react-hooks/exhaustive-deps": 0
+    "react-hooks/exhaustive-deps": 0,
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
+    "@typescript-eslint/no-misused-promises": "off"
   },
+  "ignorePatterns": [
+    "node_modules/",
+    ".next/",
+    "public/",
+    "next.config.mjs",
+    "tailwind.config.js"
+  ],
   "plugins": ["unused-imports"],
   "parserOptions": {
     "project": "./tsconfig.json",
