@@ -17,18 +17,22 @@ const Badge = ({ title, description, event, className = "" }: BadgeProps) => {
       rel="noreferrer"
       className={`relative ${className} flex items-center justify-center flex-col`}
     >
-      <div className="relative w-20 h-20 flex items-center justify-center">
+      <div className="relative w-14 h-14 sm:w-20 sm:h-20 flex items-center justify-center">
         <Image
           src={laureles as StaticImageData}
           alt={`${event.name} event logo`}
           className="absolute top-0 right-0"
         />
-        <div className="absolute bottom-6 -left m-auto w-24 h-5 bg-black text-white">
-          <p className="text-center text-sm whitespace-nowrap">{title}</p>
+        <div className="absolute bottom-4 sm:bottom-6 -left m-auto w-16 sm:w-24 h-5 bg-black text-white">
+          <p className="text-center text-xs sm:text-sm whitespace-nowrap">
+            {title}
+          </p>
         </div>
       </div>
-      <p className="font-light text-sm whitespace-nowrap">{event.name}</p>
-      <p className="text-sm italic font-light whitespace-nowrap">
+      <p className="font-light text-xs sm:text-sm whitespace-nowrap">
+        {event.name}
+      </p>
+      <p className="text-xs sm:text-sm italic font-light whitespace-nowrap">
         {description}
       </p>
     </a>
