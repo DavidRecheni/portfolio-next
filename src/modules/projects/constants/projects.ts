@@ -13,8 +13,6 @@ const projects = [
     tags: [
       "Nextjs",
       "TypeScript",
-      "Vercel",
-      "Planetscale",
       "Mysql",
       "Prisma",
       "Tailwind",
@@ -36,7 +34,6 @@ const projects = [
       "TypeScript",
       "Solidity",
       "Alchemy",
-      "AWS Amplify",
       "Ethers.js",
       "Web3.js",
       "Truffle",

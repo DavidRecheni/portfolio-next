@@ -1,6 +1,6 @@
 import { BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
 
-import IconLink from "./components/IconLink/IconLink";
+import IconLink from "../IconLink/IconLink";
 
 const links = [
   {

@@ -8,6 +8,13 @@
     "ts-strict",
     "plugin:prettier/recommended"
   ],
+  "ignorePatterns": [
+    "node_modules/",
+    ".next/",
+    "public/",
+    "next.config.mjs",
+    "tailwind.config.js"
+  ],
   "rules": {
     "react-hooks/exhaustive-deps": 0,
     "prettier/prettier": [
@@ -18,16 +25,11 @@
     ],
     "@typescript-eslint/no-misused-promises": "off"
   },
-  "ignorePatterns": [
-    "node_modules/",
-    ".next/",
-    "public/",
-    "next.config.mjs",
-    "tailwind.config.js"
-  ],
+
   "plugins": ["unused-imports"],
   "parserOptions": {
     "project": "./tsconfig.json",
-    "ecmaVersion": "latest"
+    "ecmaVersion": "latest",
+    "sourceType": "module"
   }
 }

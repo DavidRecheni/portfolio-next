@@ -12,7 +12,7 @@
   "dependencies": {
     "@react-three/postprocessing": "^2.16.3",
     "daisyui": "^4.12.13",
-    "eslint-config-ts-strict": "^1.4.1",
+    "eslint-config-ts-strict": "^1.4.2",
     "framer-motion": "^10.18.0",
     "next": "14.2.13",
     "next-themes": "^0.2.1",
@@ -25,13 +25,13 @@
     "webpack": "^5.95.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.25.8",
+    "@babel/core": "^7.25.9",
     "@next/bundle-analyzer": "^13.5.7",
     "@types/node": "18.11.9",
     "@types/react": "18.0.25",
     "@types/react-dom": "18.0.8",
-    "@typescript-eslint/eslint-plugin": "^8.8.0",
-    "@typescript-eslint/parser": "^8.8.0",
+    "@typescript-eslint/eslint-plugin": "^8.11.0",
+    "@typescript-eslint/parser": "^8.11.0",
     "autoprefixer": "^10.4.20",
     "babel-loader": "^9.2.1",
     "eslint": "8.57.0",

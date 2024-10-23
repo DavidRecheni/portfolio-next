@@ -1,6 +1,5 @@
 import type { StaticImageData } from "next/image";
 import Image from "next/image";
-import { BiWorld } from "react-icons/bi";
 import { BsGithub } from "react-icons/bs";
 
 import IconLink from "../../../../../home/components/SocialMedia/components/IconLink/IconLink";
@@ -21,26 +20,23 @@ const Project = ({ project }: IProps) => {
   return (
     <div
       key={project.title}
-      className="flex flex-col gap-y-2 rounded-sm border border-white p-4"
+      className="flex flex-col gap-y-2 rounded-sm border bg-white text-slate-900 p-4"
     >
-      <Image src={project.image} alt={`${project.title} Screenshot`} />
-
-      <div className="flex flex-col gap-y-2 border-t mt-2 pt-2 border-white">
+      <a href={project.link} target="_blank" rel="noreferrer">
+        <Image src={project.image} alt={`${project.title} Screenshot`} />
+      </a>
+      <div className="flex flex-col gap-y-2 mt-2 pt-2 ">
         <div className="flex justify-between items-start">
-          <div className="flex gap-2 text-gray-300">
-            <IconLink
-              link={{ to: project.link, icon: BiWorld, alt: "Website" }}
-            />
+          <div className="flex gap-2 text-gray-900">
             {project.repo && (
               <IconLink
                 link={{ to: project.repo, icon: BsGithub, alt: "Repository" }}
               />
             )}
           </div>
-          <p>{project.creationDate}</p>
         </div>
 
-        <h2 className="text-lg">{project.title}</h2>
+        <h2 className="text-lg font-medium">{project.title}</h2>
 
         <p className="">{project.description}</p>
 

@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider attribute="class">
       <AnimatePresence mode="wait">
-        <motion.div>
+        <motion.div className="font-['Open\\Sans]">
           <Component {...pageProps} />
         </motion.div>
       </AnimatePresence>

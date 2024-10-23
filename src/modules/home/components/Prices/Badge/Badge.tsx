@@ -1,26 +1,37 @@
 import type { StaticImageData } from "next/image";
 import Image from "next/image";
 
+import laureles from "@/../public/images/laureles.svg";
+
 interface BadgeProps {
-  image: StaticImageData | string;
   title: string;
   event: { name: string; url: string };
   description?: string;
+  className?: string;
 }
-const Badge = ({ image, title, description, event }: BadgeProps) => {
+const Badge = ({ title, description, event, className = "" }: BadgeProps) => {
   return (
-    <div className="flex flex-col justify-center">
-      <a href={event.url} target="_blank" rel="noreferrer">
-        <div className="relative w-20 h-20 flex items-center justify-center">
-          <Image src={image} alt="Event logo" />
-          <div className="absolute top-0 bottom-0 -left m-auto w-24 h-8 bg-white text-black">
-            <p className="text-center font-semibold">{title}</p>
-          </div>
+    <a
+      href={event.url}
+      target="_blank"
+      rel="noreferrer"
+      className={`relative ${className} flex items-center justify-center flex-col`}
+    >
+      <div className="relative w-20 h-20 flex items-center justify-center">
+        <Image
+          src={laureles as StaticImageData}
+          alt={`${event.name} event logo`}
+          className="absolute top-0 right-0"
+        />
+        <div className="absolute bottom-6 -left m-auto w-24 h-5 bg-black text-white">
+          <p className="text-center text-sm whitespace-nowrap">{title}</p>
         </div>
-        <p className="font-light text-sm">{event.name}</p>
-        <p className="text-sm italic font-light">{description}</p>
-      </a>
-    </div>
+      </div>
+      <p className="font-light text-sm whitespace-nowrap">{event.name}</p>
+      <p className="text-sm italic font-light whitespace-nowrap">
+        {description}
+      </p>
+    </a>
   );
 };
 
