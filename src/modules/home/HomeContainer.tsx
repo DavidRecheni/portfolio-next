@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
 
-import useDetectScroll from "../core/hooks/useDetectScroll";
 import Project from "../projects/components/ProjectsList/components/Project/Project";
 import projects from "../projects/constants/projects";
 import ContactForm from "./components/ContactForm/ContactForm";
@@ -28,10 +27,6 @@ const links = [
 ];
 
 const HomeContainer = () => {
-  const { scrollPosition } = useDetectScroll();
-
-  const hasScrolled = scrollPosition.top > 50;
-
   const showModal = () => {
     (
       document.getElementById("contact_modal") as HTMLDialogElement | null
