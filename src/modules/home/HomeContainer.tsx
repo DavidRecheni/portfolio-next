@@ -46,7 +46,7 @@ const HomeContainer = () => {
             ))}
           </div>
         </div>
-        <div className="row-start-1 col-start-1 col-span-7 sm:col-span-6 row-span-12 sm:p-6 grid grid-rows-10 grid-cols-6 gap-4">
+        <div className="row-start-1 col-start-1 col-span-7  row-span-12 sm:p-6 grid grid-rows-10 grid-cols-6 gap-4">
           <h2 className="row-start-2 col-span-3 sm:col-span-5 text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl antialiased -mt-5">
             Developer
           </h2>
@@ -86,7 +86,7 @@ const HomeContainer = () => {
             className="row-start-7 col-start-2 col-span-3 lg:col-span-1 ml-12 lg:mr-6 xl:mr-0 xl:col-start-2 row-span-2"
           />
         </div>
-        <div className="col-span-5 sm:col-span-6 row-span-12 row-start-1 col-start-8 sm:col-start-7 p-4 bg-white">
+        <div className="col-span-5 sm:col-span-6 row-span-12 row-start-1 sm:col-start-7 p-4 bg-white">
           <Image
             src="/images/profile.jpg"
             alt="Me"
