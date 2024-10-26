@@ -41,9 +41,9 @@ const HomeContainer = () => {
         id="main"
       >
         <motion.div
-          initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -50 }}
+          initial={{ y: -50 }}
+          animate={{ y: 0 }}
+          exit={{ y: -50 }}
           className="col-start-2 sm:col-start-5 lg:col-start-6 row-start-1 col-span-4 lg:col-span-2 z-10 mt-4 sm:mt-0"
         >
           <div className="flex items-center justify-center gap-5 pl-4 py-2 rounded-b-xl bg-white">
@@ -53,9 +53,9 @@ const HomeContainer = () => {
           </div>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, x: -200 }}
-          animate={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: -200 }}
+          initial={{ x: -200 }}
+          animate={{ x: 0 }}
+          exit={{ x: -200 }}
           className="row-start-1 col-start-1 col-span-7 row-span-12 p-6 grid grid-rows-10 grid-cols-4 sm:grid-cols-6 gap-4"
         >
           <h2 className="row-start-2 col-span-3 sm:col-span-5 text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl antialiased sm:-mt-5">
@@ -73,13 +73,15 @@ const HomeContainer = () => {
           </div>
 
           <div className="row-start-6 col-start-1 col-span-4 lg:col-span-3 2xl:col-span-2 flex items-end">
-            <button
+            <motion.button
               onClick={showModal}
-              className="text-lg sm:text-xl bg-black text-white font-normal px-3 pt-1 pb-2 rounded-sm hover:bg-slate-800 border transition-colors duration-300 ease-in-out w-full"
+              className="text-lg sm:text-xl bg-black text-white font-normal px-3 pt-1 pb-2 rounded-sm border w-full"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
               aria-label="Get in touch"
             >
               Get in touch
-            </button>
+            </motion.button>
           </div>
           <Badge
             title="Winner"
@@ -116,7 +118,7 @@ const HomeContainer = () => {
         id="main"
       >
         <h2 className="text-[3.5rem] sm:text-[7rem]">PROJECTS</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-12 pt-6 pb-24">
+        <div className="grid grid-cols-1 md:grid-cols-2  gap-4 md:gap-12 pt-6 pb-24">
           {projects.map((project) => (
             <Project project={project} key={project.title} />
           ))}

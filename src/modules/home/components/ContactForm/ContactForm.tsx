@@ -1,4 +1,5 @@
 import { zodResolver } from "@hookform/resolvers/zod";
+import { motion } from "framer-motion";
 import type { SubmitHandler } from "react-hook-form";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
@@ -87,12 +88,14 @@ export default function ContactForm() {
           )}
         </div>
       </div>
-      <button
+      <motion.button
         type="submit"
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
         className="bg-slate-900 text-white px-6 py-1  cursor-pointer rounded-sm"
       >
         Send message
-      </button>
+      </motion.button>
     </form>
   );
 }
