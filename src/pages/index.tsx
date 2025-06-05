@@ -1,8 +1,8 @@
 import type { NextPage } from "next";
+import { Toaster } from "sonner";
 
 import PageHead from "../modules/core/components/PageHead";
 import HomeContainer from "../modules/home/HomeContainer";
-import { Toaster } from "sonner";
 
 const Home: NextPage = () => {
   return (
