@@ -1,5 +1,6 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { motion } from "framer-motion";
+import { useState } from "react";
 import type { SubmitHandler } from "react-hook-form";
 import { useForm } from "react-hook-form";
 import { toast } from "sonner";
@@ -26,6 +27,8 @@ export default function ContactForm() {
     resolver: zodResolver(inputSchema),
   });
 
+  const [isLoadingRequest, setIsLoadingRequest] = useState(false);
+
   const closeModal = () => {
     (
       document.getElementById("contact_modal") as HTMLDialogElement | null
@@ -33,6 +36,7 @@ export default function ContactForm() {
   };
 
   const onSubmit: SubmitHandler<Inputs> = async (data) => {
+    setIsLoadingRequest(true);
     await fetch("/api/sendemail", {
       method: "POST",
       headers: {
@@ -43,9 +47,11 @@ export default function ContactForm() {
       .then((response) => {
         if (!response.ok) {
           toast.error("Something went wrong");
+          setIsLoadingRequest(false);
           return;
         }
         toast.success("Message sent successfully!");
+        setIsLoadingRequest(false);
         closeModal();
       })
       .catch((error) => {
@@ -113,6 +119,7 @@ export default function ContactForm() {
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
         className="bg-slate-900 text-white px-6 py-1  cursor-pointer rounded-sm"
+        disabled={isLoadingRequest}
       >
         Send message
       </motion.button>
