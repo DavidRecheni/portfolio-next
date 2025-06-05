@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 
 import PageHead from "../modules/core/components/PageHead";
 import HomeContainer from "../modules/home/HomeContainer";
+import { Toaster } from "sonner";
 
 const Home: NextPage = () => {
   return (
@@ -10,6 +11,7 @@ const Home: NextPage = () => {
       <main>
         <HomeContainer />
       </main>
+      <Toaster position="top-right" richColors />
     </div>
   );
 };

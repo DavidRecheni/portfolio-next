@@ -2,6 +2,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { motion } from "framer-motion";
 import type { SubmitHandler } from "react-hook-form";
 import { useForm } from "react-hook-form";
+import { toast } from "sonner";
 import { z } from "zod";
 
 interface Inputs {
@@ -24,6 +25,13 @@ export default function ContactForm() {
   } = useForm<Inputs>({
     resolver: zodResolver(inputSchema),
   });
+
+  const closeModal = () => {
+    (
+      document.getElementById("contact_modal") as HTMLDialogElement | null
+    )?.close();
+  };
+
   const onSubmit: SubmitHandler<Inputs> = async (data) => {
     await fetch("/api/sendemail", {
       method: "POST",
@@ -31,7 +39,19 @@ export default function ContactForm() {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(data),
-    });
+    })
+      .then((response) => {
+        if (!response.ok) {
+          toast.error("Something went wrong");
+          return;
+        }
+        toast.success("Message sent successfully!");
+        closeModal();
+      })
+      .catch((error) => {
+        console.error("Error sending email:", error);
+        toast.error("Failed to send message. Please try again later.");
+      });
   };
 
   return (
