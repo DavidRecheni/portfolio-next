@@ -1,7 +1,6 @@
 const data = {
   about:
-    "I focus on helping early-stage startups by building their products and making their processes run smoother. I'm good at coding and understand how startups work, so I thrive in fast-paced settings where being creative and flexible is key. I've worked on making software that grows with a company, using new technologies to help it expand, and working closely with different teams to get things done. I'm passionate about using technology to make startups succeed, bringing both technical skills and an entrepreneurial mindset to every project.",
-
+    "I help early-stage startups build scalable products and engineering teams that move fast without accumulating technical debt. With deep experience in both enterprise software architecture and startup dynamics, I guide founders through critical technical decisions—from choosing the right tech stack to hiring their first engineers to establishing development processes that scale. I've architected systems that grow seamlessly from MVP to enterprise scale, implemented development workflows that maintain velocity as teams expand, and mentored engineering leaders through hypergrowth phases.",
   certificates: [
     {
       name: "Agile methodologies expert",
@@ -15,10 +14,23 @@ const data = {
 
   experience: [
     {
-      date: { start: "02/2023", end: "current" },
+      date: { start: "12/2023", end: "current" },
       place: "Berlin, DE",
       institution: {
-        name: "Kwest",
+        name: "Kraken Technologies",
+        link: "https://kraken.tech/",
+      },
+      title: "Lead Frontend Engineer",
+      stack:
+        "Nextjs, Typescript, Styled-components, react query, Storybooks, Playwright, vitest, AWS",
+      description:
+        "Leading the largest frontend engineering team at the company across a fully distributed, 20+ person project. Responsible for both technical architecture and team management of our frontend development for a comprehensive process automation platform that synchronizes company and client systems across the energy sector. Key Responsibilities:• Drive frontend architecture decisions for complex automation workflows and integrations • Manage and mentor a team of 8 remote frontend engineers across multiple time zones • Optimize team velocity and maintain high performance standards in a distributed environment • Lead technical strategy for user-facing components of enterprise automation tools • Balance hands-on technical contributions with people management and strategic planning • Foster team motivation and culture within a fully remote, international workforce",
+    },
+    {
+      date: { start: "02/2023", end: "12/2023" },
+      place: "Berlin, DE",
+      institution: {
+        name: "Kwest (acq. by Kraken tech)",
         link: "https://getkwest.com/",
       },
       title: "Sr Front-end Developer",
