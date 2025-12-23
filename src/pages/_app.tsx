@@ -6,7 +6,12 @@ import { ThemeProvider } from "next-themes";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ThemeProvider attribute="class">
+    <ThemeProvider
+      attribute="class"
+      enableSystem={false}
+      defaultTheme="light"
+      storageKey="theme"
+    >
       <AnimatePresence mode="wait">
         <motion.div className="font-['Open\\Sans]">
           <Component {...pageProps} />
