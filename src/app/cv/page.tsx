@@ -1,15 +1,17 @@
-import type { NextPage } from "next";
 import { ThemeProvider } from "next-themes";
 
-import PageHead from "../../modules/core/components/PageHead";
 import CVContainer from "../../modules/CV/CVContainer";
 
-const CV: NextPage = () => {
+export const metadata = {
+  title: "CV - David Recheni",
+  description: "David Recheni's Curriculum Vitae",
+};
+
+export default function CV() {
   return (
     <ThemeProvider attribute="class" forcedTheme="light" enableSystem={false}>
       <div className="h-full bg-white text-black">
         <div className="w-full h-full flex justify-center relative">
-          <PageHead />
           <main>
             <CVContainer />
           </main>
@@ -17,6 +19,5 @@ const CV: NextPage = () => {
       </div>
     </ThemeProvider>
   );
-};
+}
 
-export default CV;

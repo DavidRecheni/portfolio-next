@@ -1,8 +1,8 @@
-import type { NextApiRequest, NextApiResponse } from "next";
+import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
 import { z } from "zod";
 
-import { ContactEmailTemplate } from "../../modules/home/components/ContactForm/ContactEmailTemplate";
+import { ContactEmailTemplate } from "../../../modules/home/components/ContactForm/ContactEmailTemplate";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -12,9 +12,11 @@ const ContactEmailTemplateInputType = z.object({
   message: z.string(),
 });
 
-export default async (req: NextApiRequest, res: NextApiResponse) => {
+export async function POST(req: NextRequest) {
   try {
-    const inputData = ContactEmailTemplateInputType.parse(req.body);
+    const body = await req.json();
+    const inputData = ContactEmailTemplateInputType.parse(body);
+    
     const { data, error } = await resend.emails.send({
       from: "contact@kopff.shop",
       to: ["davidrecheni@gmail.com"],
@@ -25,12 +27,15 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
         message: inputData.message,
       }),
     });
+    
     if (error) {
-      res.status(400).json({ error });
+      return NextResponse.json({ error }, { status: 400 });
     }
 
-    res.status(200).json({ data });
+    return NextResponse.json({ data }, { status: 200 });
   } catch (error) {
-    res.status(400).json({ error });
+    const errorMessage = error instanceof Error ? error.message : "Unknown error";
+    return NextResponse.json({ error: errorMessage }, { status: 400 });
   }
-};
+}
+

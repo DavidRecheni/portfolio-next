@@ -1,9 +1,6 @@
 module.exports = {
   darkMode: "class",
-  mode: "jit",
   content: [
-    "node_modules/daisyui/dist/**/*.js",
-    "node_modules/react-daisyui/dist/**/*.js",
     "./src/**/*.{ts,tsx}",
   ],
   theme: {
@@ -28,4 +25,11 @@ module.exports = {
     },
   },
   plugins: [require("daisyui")],
+  daisyui: {
+    themes: ["light", "dark"],
+    base: true,
+    styled: true,
+    utils: true,
+    logs: false,
+  },
 };
