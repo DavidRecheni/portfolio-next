@@ -1,13 +1,11 @@
 const NameMessage = () => {
   return (
     <>
-      <span>DAVID RECHENI</span>
+      <span>I BUILD IT</span>
       <span>·</span>
-      <span>DAVID RECHENI</span>
+      <span>I BRAND IT</span>
       <span>·</span>
-      <span>DAVID RECHENI</span>
-      <span>·</span>
-      <span>DAVID RECHENI</span>
+      <span>I SHIP IT</span>
       <span>·</span>
     </>
   );
