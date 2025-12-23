@@ -1,8 +1,27 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap')
+layer(base);
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+@plugin "daisyui";
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@theme {
+  /* Custom colors - accessible as github-gray, github-dark, github-blue */
+  --color-github-gray: #c9d1d9;
+  --color-github-dark: #0d1117;
+  --color-github-blue: #4c8eda;
+  
+  /* Animation */
+  --animate-marquee: marquee 80s linear infinite;
+}
 
 html {
   scroll-behavior: smooth;

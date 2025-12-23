@@ -1,3 +1,5 @@
+"use client";
+
 import { HiDownload } from "react-icons/hi";
 
 const DownloadButton = () => {

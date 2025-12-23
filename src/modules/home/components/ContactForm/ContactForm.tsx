@@ -68,40 +68,42 @@ export default function ContactForm() {
       onSubmit={handleSubmit(onSubmit)}
       className="flex flex-col items-center"
     >
-      <div className="flex flex-col w-full">
-        <label className="input  flex items-center gap-2">
-          Name
-          <input
-            placeholder="David"
-            {...register("name", { required: true })}
-            className="grow border-b border-black font-semibold"
-          />
-        </label>
-        <div className="label">
-          {errors.name && (
-            <span className="label-text-alt text-error">
-              This field is required
-            </span>
-          )}
-        </div>
-        <label className="input flex items-center gap-2 w-full ">
-          Email
-          <input
-            placeholder="your@email.com"
-            {...register("email", { required: true })}
-            className="grow border-b border-black font-semibold"
-          />
-        </label>
-        <div className="label">
-          {errors.email && (
-            <span className="label-text-alt text-error">
-              {errors.email.message}
-            </span>
-          )}
-        </div>
-      </div>
+      <div className="flex flex-col w-full gap-y-2">
+        <>
+          <label className="input flex items-center gap-2">
+            Name
+            <input
+              placeholder="David"
+              {...register("name", { required: true })}
+              className="grow font-semibold"
+            />
+          </label>
+          <div className="label">
+            {errors.name && (
+              <span className="label-text-alt text-error">
+                This field is required
+              </span>
+            )}
+          </div>
+        </>
+        <>
+          <label className="input flex items-center gap-2 w-full ">
+            Email
+            <input
+              placeholder="your@email.com"
+              {...register("email", { required: true })}
+              className="grow font-semibold"
+            />
+          </label>
+          <div className="label">
+            {errors.email && (
+              <span className="label-text-alt text-error">
+                {errors.email.message}
+              </span>
+            )}
+          </div>
+        </>
 
-      <div className="flex flex-col w-full">
         <textarea
           {...register("message", { required: true })}
           className="textarea textarea-bordered text-base border-black textarea-md w-full font-semibold"

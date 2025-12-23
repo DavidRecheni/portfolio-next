@@ -4,7 +4,7 @@ import WorkExperience from "./components/WorkExperience";
 
 const RightColumn = () => {
   return (
-    <div className="flex flex-col flex-grow">
+    <div className="flex flex-col grow">
       <AboutContainer />
       <WorkExperience />
       <EducationContainer />

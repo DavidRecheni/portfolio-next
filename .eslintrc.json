@@ -13,7 +13,8 @@
     ".next/",
     "public/",
     "next.config.mjs",
-    "tailwind.config.js"
+    "tailwind.config.js",
+    "*.d.ts"
   ],
   "rules": {
     "react-hooks/exhaustive-deps": 0,
@@ -25,8 +26,6 @@
     ],
     "@typescript-eslint/no-misused-promises": "off"
   },
-
-  "plugins": ["unused-imports"],
   "parserOptions": {
     "project": "./tsconfig.json",
     "ecmaVersion": "latest",
