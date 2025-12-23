@@ -10,7 +10,7 @@ const sidebar = {
   open: (height = 1000) => ({
     clipPath: `circle(${height * 2 + 200}px at 40px 40px)`,
     transition: {
-      type: "spring",
+      type: "spring" as const,
       stiffness: 20,
       restDelta: 2,
     },
@@ -19,7 +19,7 @@ const sidebar = {
     clipPath: "circle(30px at 187px 43px)",
     transition: {
       delay: 0.3,
-      type: "spring",
+      type: "spring" as const,
       stiffness: 400,
       damping: 40,
     },
